@@ -1,0 +1,242 @@
+extends layout
+
+block content
+    .page.js-page
+      // One Page Sidebar
+      .one-page-sidebar
+        // One Page Sidebar Header
+        .one-page-sidebar-header
+          // One Page Logo
+          .one-page-logo
+            // Logo Image
+            a.logo-image(href='/friends')
+              img(src='/images/logo2.png')
+            br
+            a.logo-image(href='/friends')
+              img(src='/images/friend.png')
+            // End of Logo Image
+          // End of One Page Logo
+          // One Page Meta
+          // End of One Page Meta
+        // End of One Page Sidebar Header
+        // One Page Nav
+        .one-page-nav-wrapper.js-custom-scrollbar
+          ul.one-page-nav.js-one-page-nav.js-menu-vertical(data-prepend-to='.js-prepend-mobile-menu')
+            li.is-active
+              a(href='#Personal_Profile')
+                span.one-page-nav-icon
+                  i.fa.fa-file
+                | Personal Profile
+            li
+              a(href='#Education\
+              ')
+                span.one-page-nav-icon
+                  i.fa.fa-book
+                | Education
+            li
+              a(href='#Skills')
+                span.one-page-nav-icon
+                  i.fa.fa-cogs
+                | Skills
+            li
+              a(href='#Summary')
+                span.one-page-nav-icon
+                  i.fa.fa-edit
+                | Summary
+            li
+              a(href='#Employment_history')
+                span.one-page-nav-icon
+                  i.fa.fa-history
+                | Employment History
+            li
+              a(href='#Projects')
+                span.one-page-nav-icon
+                  i.fa.fa-server
+                | Projects
+            li
+              a(href='#Awards')
+                span.one-page-nav-icon
+                  i.fa.fa-star
+                | Awards
+            li
+              a(href='#Achievements')
+                span.one-page-nav-icon
+                  i.fa.fa-thumbs-up
+                | Achievements
+            li
+              a(href='#Strengths\
+              ')
+                span.one-page-nav-icon
+                  i.fa.fa-plus
+                | Strengths
+            li
+              a(href='#Interests')
+                span.one-page-nav-icon
+                  i.fa.fa-star-o
+                | Interests
+            li
+              a(href='#Online_references')
+                span.one-page-nav-icon
+                  i.fa.fa-desktop
+                | Online References
+        // End of One Page Nav
+        // One Page Sidebar Footer
+        footer.one-page-sidebar-footer
+          | All Rights Reserved.
+          a(href='http://www.masymbol.com/', target='_blank') Masymbol Technologies
+          |  Pvt Ltd © 2016
+        // End of One Page Sidebar Footer
+      // End of One Page Sidebar
+      // One Page Content
+      .one-page-content
+        // Header
+        header.header.large.header-one-page.js-header-fixed
+          .container-fluid.container-spaced
+            .row
+              .col-md-3.col-sm-6.col-xs-5
+                .visible-sm-block.visible-xs-block
+                  // Logo Image
+                  a.logo-image(href='/')
+                    img.img-responsive(src='https://s3.amazonaws.com/skilledtree-public/logo.png', alt='logo')
+                  // End of Logo Image
+              .col-md-12.col-sm-6.col-xs-7
+                // Menu
+                nav.right.helper
+                  ul.menu.sf-menu.js-menu
+                    li
+                      a(href='/friends')
+                        i.fa.fa-home.fa-lg
+                    li
+                      a(href='/friends/introduction')
+                        | Introduction
+                    li
+                      a(href='/friends/current_openings')
+                        | Current Openings
+                    li
+                      a(href='/friends/job_tweets') Job Tweets
+                    li
+                      a(href='/friends/share_resumes') Share your resume
+                    li
+                      a(href='/friends/resumes') Resumes
+                    li
+                      a.active(href='/friends/my_profile') My Profile
+                    li
+                      a(href='/friends/header') Header
+                // End of Menu
+        // End of Header
+        #content
+          .container-fluid.container-spaced
+            .col-md-12
+              // Category Info
+              #Personal_Profile.category-info.helper.pt0
+                h1
+                  | Personal Profile
+                  // Fragment Identifier
+                  // End of Fragment Identifier
+                p.category-content
+                  | Add or Modify your profile details such as First name, Surname, Gender, Email ID, Phone Number, Passport, Date of Birth & Nationality for better identification in your network.
+            .col-md-12
+              // Category Info
+              #Education.category-info.helper.pt0
+                h1
+                  | Education
+                  // Fragment Identifier
+                  // End of Fragment Identifier
+                p.category-content
+                  | Your High School and Higher Secondary School, UG and PG details are required to show your profile to the interviewer. So it is better to feed all those information in your profile section.
+            .col-md-12
+              // Category Info
+              #Skills.category-info.helper.pt0
+                h1
+                  | Skills
+                  // Fragment Identifier
+                  // End of Fragment Identifier
+                p.category-content
+                  | Your key skills needs to be added.
+            .col-md-12
+              // Category Info
+              #Summary.category-info.helper.pt0
+                h1
+                  | Summary
+                  // Fragment Identifier
+                  // End of Fragment Identifier
+                p.category-content
+                  | If you have your concern regarding the job, you can write it out here. It will also be visible to the interviewer.
+            .col-md-12
+              // Category Info
+              #Employment_history.category-info.helper.pt0
+                h1
+                  | Employment History
+                  // Fragment Identifier
+                  // End of Fragment Identifier
+                p.category-content
+                  | Information about your past employers, locations, employment dates, salaries, position held and duties held for a certain period should be noted.
+            .col-md-12
+              // Category Info
+              #Projects.category-info.helper.pt0
+                h1
+                  | Projects
+                  // Fragment Identifier
+                  // End of Fragment Identifier
+                p.category-content
+                  | Previous projects you have done.
+            .col-md-12
+              // Category Info
+              #Awards.category-info.helper.pt0
+                h1
+                  | Awards
+                  // Fragment Identifier
+                  // End of Fragment Identifier
+                p.category-content
+                  | Awards you got for your appreciation.
+            .col-md-12
+              // Category Info
+              #Achievements.category-info.helper.pt0
+                h1
+                  | Achievements
+                  // Fragment Identifier
+                  // End of Fragment Identifier
+                p.category-content
+                  | Short term and long term achievements.
+            .col-md-12
+              // Category Info
+              #Strengths.category-info.helper.pt0
+                h1
+                  | Strengths
+                  // Fragment Identifier
+                  // End of Fragment Identifier
+                p.category-content
+                  | Your strength can be added.
+            .col-md-12
+              // Category Info
+              #Interests.category-info.helper.pt0
+                h1
+                  | Interests
+                  // Fragment Identifier
+                  // End of Fragment Identifier
+                p.category-content
+                  | Your Hobbies and Interests can be added.
+            .col-md-12
+              // Category Info
+              #Online_references.category-info.helper.pt0
+                h1
+                  | Online References
+                  // Fragment Identifier
+                  // End of Fragment Identifier
+                p.category-content
+                  | Your Social Media profile such as Facebook, LinkedIn or any other links can be added to contact you as well as to maintain a good relation.
+            .row
+              .col-md-8
+                img(src='/images/F11.png', width='100%')
+      // End of One Page Content
+    script(src='https://s3.amazonaws.com/skilledtree-public/all.js')
+    // Google Analytics: change UA-XXXXX-X to be your site's ID.
+    //
+      <script>
+      (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+      function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+      e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+      e.src='//www.google-analytics.com/analytics.js';
+      r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+      ga('create','UA-XXXXX-X','auto');ga('send','pageview');
+      </script>

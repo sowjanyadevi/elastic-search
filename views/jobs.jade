@@ -1,0 +1,209 @@
+extends layout
+
+block content
+    .page.js-page
+      // One Page Sidebar
+      .one-page-sidebar
+        // One Page Sidebar Header
+        .one-page-sidebar-header
+          // One Page Logo
+          .one-page-logo
+            // Logo Image
+            a.logo-image(href='/hr_managers')
+              img(src='/images/logo2.png')
+            br
+            a.logo-image(href='/hr_managers')
+              img(src='/images/manager.png')
+        .one-page-nav-wrapper.js-custom-scrollbar
+          ul.one-page-nav.js-one-page-nav(data-prepend-to='.js-prepend-mobile-menu')
+            li.is-active
+              a(href='#assign')
+                span.one-page-nav-icon
+                  i.fa.fa-user-plus
+                | Assign Recruiter
+            li
+              a(href='#referral_reward')
+                span.one-page-nav-icon
+                  i.fa.fa-gift
+                | Fix referral reward
+            li
+              a(href='#post_job')
+                span.one-page-nav-icon
+                  i.fa.fa-envelope
+                | Post a job
+            li
+              a(href='#closed_jobs')
+                span.one-page-nav-icon
+                  i.fa.fa-stop
+                | Closed Jobs
+                span.fa.fa-caret-down.pull-right(style='color:grey!important;')
+              ul
+                li
+                  a(href='#close_job')
+                    span.one-page-nav-icon
+                      i.fa.fa-stop-circle
+                    | Close  a Job
+                li
+                  a(href='#repost_job')
+                    span.one-page-nav-icon
+                      i.fa.fa-envelope-o
+                    | Repost a Job
+            li
+              a(href='#saved_jobs')
+                span.one-page-nav-icon
+                  i.fa.fa-tag
+                | Saved Jobs
+            li
+              a(href='#search_jobs')
+                span.one-page-nav-icon
+                  i.fa.fa-search
+                | Search Jobs
+        // End of One Page Nav
+        // One Page Sidebar Footer
+        footer.one-page-sidebar-footer
+          | All Rights Reserved.
+          a(href='http://www.masymbol.com/', target='_blank') Masymbol Technologies
+          |  Pvt Ltd © 2016
+        // End of One Page Sidebar Footer
+      // End of One Page Sidebar
+      // One Page Content
+      .one-page-content
+        // Header
+        header.header.large.header-one-page.js-header-fixed
+          .container-fluid.container-spaced
+            .row
+              .col-md-3.col-sm-6.col-xs-5
+                .visible-sm-block.visible-xs-block
+                  // Logo Image
+                  a.logo-image(href='/')
+                    img.img-responsive(src='https://s3.amazonaws.com/skilledtree-public/logo.png', alt='logo')
+                  // End of Logo Image
+              .col-md-9.col-sm-6.col-xs-7
+                // Menu
+                nav.right.helper
+                  ul.menu.sf-menu.js-menu
+                    li
+                      a(href='/hr_managers')
+                        i.fa.fa-home.fa-lg
+                    li
+                      a(href='/hr_managers/introduction')
+                        | Introduction
+                    li
+                      a(href='/hr_managers/team') Team
+                    li
+                      a(a='', href='#') Members
+                      ul
+                        li
+                          a(href='/hr_managers/employees') Employees
+                        li
+                          a(href='/hr_managers/recruiter') Recruiter
+                        li
+                          a(href='/hr_managers/manager') Manager
+                    li
+                      a.active(href='#') Jobs
+                      ul
+                        li
+                          a.active(href='/hr_managers/Jobs') Jobs
+                        li
+                          a(href='/hr_managers/resumes') Resumes
+                    li
+                      a(href='/hr_managers/gamification') Gamification
+                    li
+                      a(href='/hr_managers/reports') Reports
+                    li
+                      a(href='#') Branding
+                      ul
+                        li
+                          a(href='/hr_managers/career') Career Page
+                        li
+                          a(href='/hr_managers/companybrand') Company Branding
+                    li
+                      a(href='/hr_managers/dashboard') Dashboard
+                    li
+                      a(href='#') Header
+                      ul
+                        li
+                          a(href='/hr_managers/header') Header Icons
+                        li
+                          a(href='/hr_managers/settings') Settings
+                // End of Menu
+        // End of Header
+        #content
+          .container-fluid.container-spaced
+            .col-md-12
+              // Category Info
+              #assign.category-info.helper.pt0
+                br
+                h1 Assign Recruiter
+                p.category-content
+                  | Recruiters should be added and assigned to a particular team before posting a job. While posting a Job, recruiters will be assigned to the job for the further recruitment process.
+            .col-md-12
+              #referral_reward.category-info.helper.pt0
+                br
+                h1
+                  | Fix referral reward
+                p.category-content
+                  | It’s company policy that they can decide the referral amount to be given or no referral rewards for the referral jobs.This needs to be set before posting a job. It can be added in the ‘Company Profile’ under ‘Settings’ page.
+            .col-md-12
+              #post_job.category-info.helper.pt0
+                br
+                h1
+                  | Post a job
+                p.category-content
+                  | Once the team, recruiters and referral reward get fixed, you can able to post a job without any hassle. Jobs will be reachable to the team you have mentioned while posting the job and to the recruiters you have assigned under particular team.Mandatory fields are marked as with asterisk(*).
+            .row
+              .col-md-8
+                img(src='/images/postjob.png', width='100%')
+            br
+            br
+            .col-md-12
+              #close_job.category-info.helper.pt0
+                br
+                h1
+                  | Close a Job
+                p.category-content
+                  | Jobs can be closed automatically after 45 days from the date you posted. You can also close the jobs manually by clicking the ‘Trash’ Icon  in case its needed.
+            .col-md-12
+              #repost_job.category-info.helper.pt0
+                br
+                h1
+                  | Repost a Job
+                p.category-content
+                  | Closed Jobs can be reposted again with the same data you have entered before. Reposted Jobs will be reachable to the team you have mentioned while posting the job and to the recruiters you have assigned under the team.
+            .col-md-12
+              #saved_jobs.category-info.helper.pt0
+                br
+                h1
+                  | Saved Jobs
+                p.category-content
+                  | You can draft a job before posting it. Those Drafted jobs will be listed here and can be posted again at any point of time.
+            .row
+              .col-md-8
+                img(src='/images/savedjob.png', width='100%')
+            br
+            br
+            .row
+              .col-md-8
+                img(src='/images/savedjob2.png', width='100%')
+            .col-md-12
+              #search_jobs.category-info.helper.pt0
+                br
+                h1
+                  | Search Jobs
+                p.category-content
+                  | Jobs can be searched with the fields listed in the table.You can search any job by clicking the ‘Search Job’ button in the Jobs page.
+            .row
+              .col-md-8
+                img(src='/images/searchjob.png', width='100%')
+    // End of One Page Content
+    script(src='https://s3.amazonaws.com/skilledtree-public/all.js')
+    // Google Analytics: change UA-XXXXX-X to be your site's ID.
+    //
+      <script>
+      (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+      function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+      e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+      e.src='//www.google-analytics.com/analytics.js';
+      r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+      ga('create','UA-XXXXX-X','auto');ga('send','pageview');
+      </script>

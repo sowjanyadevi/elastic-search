@@ -1,0 +1,170 @@
+extends layout
+
+block content
+    .page.js-page
+      // One Page Sidebar
+      .one-page-sidebar
+        // One Page Sidebar Header
+        .one-page-sidebar-header
+          // One Page Logo
+          .one-page-logo
+            // Logo Image
+            a.logo-image(href='/recruiter')
+              img(src='/images/logo2.png')
+            br
+            a.logo-image(href='/recruiter')
+              img(src='/images/recruiter.png')
+            // End of Logo Image
+          // End of One Page Logo
+          // One Page Meta
+          // End of One Page Meta
+        // End of One Page Sidebar Header
+        // One Page Nav
+        .one-page-nav-wrapper.js-custom-scrollbar
+          ul.one-page-nav.js-one-page-nav(data-prepend-to='.js-prepend-mobile-menu')
+            li.is-active
+              a(href='#jobs_added')
+                span.one-page-nav-icon
+                  i.fa.fa-plus
+                | Jobs Added
+            li
+              a(href='#Jobs_Assigned')
+                span.one-page-nav-icon
+                  i.fa.fa-cubes
+                | Jobs Assigned
+            li
+              a(href='#Inactive_for_7_days')
+                span.one-page-nav-icon
+                  i.fa.fa-eye-slash
+                | Inactive for 7 days
+            li
+              a(href='#Open_Positions')
+                span.one-page-nav-icon
+                  i.fa.fa-envelope
+                | Open Positions
+            li
+              a(href='#Tagged_Candidates')
+                span.one-page-nav-icon
+                  i.fa.fa-tag
+                | Tagged Candidates
+            li
+              a(href='#Closed_Positions')
+                span.one-page-nav-icon
+                  i.fa.fa-close
+                |  Closed Positions
+        // End of One Page Nav
+        // One Page Sidebar Footer
+        footer.one-page-sidebar-footer
+          | All Rights Reserved.
+          a(href='http://www.masymbol.com/', target='_blank') Masymbol Technologies
+          |  Pvt Ltd © 2016
+        // End of One Page Sidebar Footer
+      // End of One Page Sidebar
+      // One Page Content
+      .one-page-content
+        // Header
+        header.header.large.header-one-page.js-header-fixed
+          .container-fluid.container-spaced
+            .row
+              .col-md-3.col-sm-6.col-xs-5
+                .visible-sm-block.visible-xs-block
+                  // Logo Image
+                  a.logo-image(href='/')
+                    img.img-responsive(src='https://s3.amazonaws.com/skilledtree-public/logo.png', alt='logo')
+                  // End of Logo Image
+              .col-md-12.col-sm-6.col-xs-7
+                // Menu
+                nav.right.helper
+                  ul.menu.sf-menu.js-menu
+                    li
+                      a(href='/recruiter')
+                        i.fa.fa-home.fa-lg
+                    li
+                      a(href='/recruiter/introduction') Introduction
+                    li
+                      a(href='/recruiter/jobs') Jobs
+                    li
+                      a(href='/recruiter/employees') Employees
+                    li
+                      a(href='/recruiter/resumes') Resumes 
+                    li
+                      a(href='/recruiter/header') Header
+                    li
+                      a.active(href='/recruiter/dashboard')
+                        | Dashboard
+                // End of Menu
+        // End of Header
+        #content
+          // <div class="js-prepend-mobile-menu" >
+          .container-fluid.container-spaced
+            .col-md-12
+              p.category-content
+                | It’s a data visualization tool which helps you to get the complete details of the recruitment process and its consolidated count. Dashboard shows the total number of jobs which are posted by you and assigned to you by the Hr Managers in your company, total number of the referral candidates resumes which are tagged to you for the recruitement process and the number of referral candidate resumes which are under each statuses.
+            .col-md-12
+              #jobs_added.category-info.helper.pt0
+                br
+                h1
+                  | Jobs Added
+                p.category-content
+                  | Total number of jobs which are posted by you and the HR Managers in your team.
+            .col-md-12
+              // Category Info
+              #Jobs_Assigned.category-info.helper.pt0
+                h1
+                  | Jobs Assigned
+                  // Fragment Identifier
+                  // End of Fragment Identifier
+                p.category-content
+                  | Total number of jobs assigned by the Hr Manager in your company.
+            .col-md-12
+              // Category Info
+              #Inactive_for_7_days.category-info.helper.pt0
+                h1
+                  | Inactive for 7 days
+                  // Fragment Identifier
+                  // End of Fragment Identifier
+                p.category-content
+                  | If the status of the referral candidates were not updated by you for about a week those total count will appear here.
+            .col-md-12
+              // Category Info
+              #Open_Positions.category-info.helper.pt0
+                h1
+                  | Open Positions
+                  // Fragment Identifier
+                  // End of Fragment Identifier
+                p.category-content
+                  | Number of job positions to be entered while posting the job. Count denotes the total number of vacant job positions which are not filled. Open positions will be deducted once the positions are being filled.
+            .col-md-12
+              // Category Info
+              #Tagged_Candidates.category-info.helper.pt0
+                h1
+                  | Tagged Candidates
+                  // Fragment Identifier
+                  // End of Fragment Identifier
+                p.category-content
+                  | Referral Candidate Resumes which are uploaded by the employees in your team will be assigned to you for the interview process by your HR Manager.
+            .col-md-12
+              // Category Info
+              #Closed_Positions.category-info.helper.pt0
+                h1
+                  | Closed Positions
+                  // Fragment Identifier
+                  // End of Fragment Identifier
+                p.category-content
+                  | Count denotes the total number of closed job positions. Closed Positions will be incremented once the positions are being filled. Closed positions will be taken by the status of the resumes. If the resume status is ‘Joined’, then it is considered as closed.
+            .row
+              .col-md-8
+                img(src='/images/R1.png', width='100%')
+          // </div>
+    // End of One Page Content
+    script(src='https://s3.amazonaws.com/skilledtree-public/all.js')
+    // Google Analytics: change UA-XXXXX-X to be your site's ID.
+    //
+      <script>
+      (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+      function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+      e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+      e.src='//www.google-analytics.com/analytics.js';
+      r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+      ga('create','UA-XXXXX-X','auto');ga('send','pageview');
+      </script>

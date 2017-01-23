@@ -1,0 +1,107 @@
+extends layout
+
+block content
+    .page.js-page
+      .one-page-sidebar
+        .one-page-sidebar-header
+          .one-page-logo
+            a.logo-image(href='/hr_head')
+              img(src='/images/logo2.png')
+            br
+            a.logo-image(href='/hr_head')
+              img(src='/images/head.png')
+        .one-page-nav-wrapper.js-custom-scrollbar
+          ul.one-page-nav.js-one-page-nav(data-prepend-to='.js-prepend-mobile-menu')
+            li.is-active
+              a(href='#regions')
+                span.one-page-nav-icon
+                  i.fa.fa-plus
+                | Add Regions
+            li
+              a(href='#regional')
+                span.one-page-nav-icon
+                  i.fa.fa-user-plus
+                | Add Regional Managers
+        // End of One Page Nav
+        // One Page Sidebar Footer
+        br
+        footer.one-page-sidebar-footer
+          | All Rights Reserved.
+          a(href='http://www.masymbol.com/', target='_blank') Masymbol Technologies
+          |  Pvt Ltd © 2016
+        // End of One Page Sidebar Footer
+      // End of One Page Sidebar
+      // One Page Content
+      .one-page-content
+        // Header
+        header.header.large.header-one-page.js-header-fixed
+          .container-fluid.container-spaced
+            .row
+              .col-md-3.col-sm-6.col-xs-5
+                .visible-sm-block.visible-xs-block
+                  a.logo-image(href='/')
+                    img.img-responsive(src='https://s3.amazonaws.com/skilledtree-public/logo.png', alt='logo')
+              .col-md-9.col-sm-6.col-xs-7
+                // Menu
+                nav.right.helper
+                  ul.menu.sf-menu.js-menu
+                    li
+                      a(href='/hr_head')
+                        i.fa.fa-home.fa-lg
+                    li
+                      a(href='/hr_head/introduction') Introduction 
+                    li
+                      a.active(href='/hr_head/regions') Regions
+                    li
+                      a(href='/hr_head/header') Header
+                    li
+                      a(href='/hr_head/settings') Settings
+                // End of Menu
+        // End of Header
+        #content
+          .container-fluid.container-spaced
+            .row
+              .col-md-12
+                #regions.category-info.helper.pt0
+                  h1
+                    | Add Regions
+                  p.category-content
+                    | You can add regions in the ‘Add Region’ under ‘Add Hr Regional’. Regions can be edited by clicking on the editable region name. Make sure to give the region name as more understandable while adding it.
+                  br
+                  p.category-content
+                    | Job notification will be reached to all members in the network. Any member in the network can apply the job and can recommend any of his friends.
+              .row
+                .col-md-8
+                  img(src='/images/addregion2.png', width='100%')
+              .col-md-12
+                br
+                // Category Info
+                #regional.category-info.helper.pt0
+                  h1
+                    | Add Regional Managers
+                    // Fragment Identifier
+                    // End of Fragment Identifier
+                  p.category-content
+                    | To create an account for HR Regional Managers, all you need to do is to check whether the regions are added. Once it’s done, you can create HR Regional Manager account by entering their Name, Email and his/her respective region under which he/she belongs. Login Credentials will be sent to the HR Regional Manager once the account is set.
+                  p.category-content
+                    | HR Regional Managers information will be listed below of the ‘HR Regional’ page. Regional Managers can be added one at a time.
+              .row
+                .col-md-8
+                  img(src='/images/addregionals2.png', width='100%')
+              br
+              br
+              .row
+                .col-md-8
+                  img(src='/images/addregionals.png', width='100%')
+    // End of One Page Content
+    script(src='https://s3.amazonaws.com/skilledtree-public/all.js')
+    // Google Analytics: change UA-XXXXX-X to be your site's ID.
+    //
+      <script>
+      (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+      function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+      e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+      e.src='//www.google-analytics.com/analytics.js';
+      r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+      ga('create','UA-XXXXX-X','auto');ga('send','pageview');
+      </script>

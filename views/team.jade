@@ -1,0 +1,186 @@
+extends layout
+
+block content
+    .page.js-page
+      // One Page Sidebar
+      .one-page-sidebar
+        // One Page Sidebar Header
+        .one-page-sidebar-header
+          // One Page Logo
+          .one-page-logo
+            // Logo Image
+            a.logo-image(href='/hr_managers')
+              img(src='/images/logo2.png')
+            br
+            a.logo-image(href='/hr_managers')
+              img(src='/images/manager.png')
+            // End of Logo Image
+          // End of One Page Logo
+          // One Page Meta
+          // End of One Page Meta
+        // End of One Page Sidebar Header
+        // One Page Nav
+        .one-page-nav-wrapper.js-custom-scrollbar
+          ul.one-page-nav.js-one-page-nav(data-prepend-to='.js-prepend-mobile-menu')
+            li.is-active
+              a(href='#what')
+                span.one-page-nav-icon
+                  i.fa.fa-question
+                | What is a Team?
+            li
+              a(href='#how')
+                span.one-page-nav-icon
+                  i.fa.fa-question-circle
+                | How can I classify the Teams?
+            li
+              a(href='#default_team')
+                span.one-page-nav-icon
+                  i.fa.fa-cubes
+                | Default Team and its Recruiter
+            li
+              a(href='#team_recruiters')
+                span.one-page-nav-icon
+                  i.fa.fa-users
+                | Team Recruiters
+            li
+              a(href='#create_team')
+                span.one-page-nav-icon
+                  i.fa.fa-paste
+                | Create Team and its Limit
+            li
+              a(href='#uid')
+                span.one-page-nav-icon
+                  i.fa.fa-paste
+                | Team UID
+        // End of One Page Nav
+        // One Page Sidebar Footer
+        footer.one-page-sidebar-footer
+          | All Rights Reserved.
+          a(href='http://www.masymbol.com/', target='_blank') Masymbol Technologies
+          |  Pvt Ltd © 2016
+        // End of One Page Sidebar Footer
+      // End of One Page Sidebar
+      // One Page Content
+      .one-page-content
+        // Header
+        header.header.large.header-one-page.js-header-fixed
+          .container-fluid.container-spaced
+            .row
+              .col-md-3.col-sm-6.col-xs-5
+                .visible-sm-block.visible-xs-block
+                  // Logo Image
+                  a.logo-image(href='/')
+                    img.img-responsive(src='https://s3.amazonaws.com/skilledtree-public/logo.png', alt='logo')
+                  // End of Logo Image
+              .col-md-9.col-sm-6.col-xs-7
+                // Menu
+                nav.right.helper
+                  ul.menu.sf-menu.js-menu
+                    li
+                      a(href='/hr_managers')
+                        i.fa.fa-home.fa-lg
+                    li
+                      a(href='/hr_managers/introduction')
+                        | Introduction
+                    li
+                      a.active(href='/hr_managers/team') Team
+                    li
+                      a(href='#') Members
+                      ul
+                        li
+                          a(href='/hr_managers/employees') Employees
+                        li
+                          a(href='/hr_managers/recruiter') Recruiter
+                        li
+                          a(href='/hr_managers/manager') Manager
+                    li
+                      a(href='#') Jobs
+                      ul
+                        li
+                          a(href='/hr_managers/Jobs') Jobs
+                        li
+                          a(href='/hr_managers/resumes') Resumes
+                    li
+                      a(href='/hr_managers/gamification') Gamification
+                    li
+                      a(href='/hr_managers/reports') Reports
+                    li
+                      a(href='#') Branding
+                      ul
+                        li
+                          a(href='/hr_managers/career') Career Page
+                        li
+                          a(href='/hr_managers/companybrand') Company Branding
+                    li
+                      a(href='/hr_managers/dashboard') Dashboard
+                    li
+                      a(href='#') Header
+                      ul
+                        li
+                          a(href='/hr_managers/header') Header Icons
+                        li
+                          a(href='/hr_managers/settings') Settings
+                // End of Menu
+        // End of Header
+        #content
+          .container-fluid.container-spaced
+            .col-md-12
+              #what.category-info.helper.pt0
+                br
+                h1 What is a Team?
+                p.category-content
+                  | A team is group of employees in SkilledTree. While you post a job you need to choose a team. This job only visible to assigned team members but not other teams. So, each team member can see different jobs based his assigned team. 
+                  br
+                  | 								This classifies all of your employees into different team.
+            .col-md-12
+              #how.category-info.helper.pt0
+                h1
+                  | How can I classify the Teams?
+                p.category-content
+                  | You can classify the team by skillset. For example, for all technology member create a team ‘technology’ and assign all technology members to this team. You can classify your teams by location or any other criteria you feel.
+            .col-md-12
+              br
+              #default_team.category-info.helper.pt0
+                h1
+                  | Default Team and its Recruiter
+                p.category-content
+                  | When you setup an account  SkilledTree creates one default team. And you assigned as recruiter for this default team.
+            .col-md-12
+              br
+              #team_recruiters.category-info.helper.pt0
+                h1
+                  | Team Recruiters
+                p.category-content
+                  | Each team can have multiple recruiters. You need to create new recruiter account for each recruiters. Recruiter can view only his assigned team jobs and resumes. This classifies the job visibility for recruiters. For more information look at the recruiter section.
+            .col-md-12
+              br
+              #create_team.category-info.helper.pt0
+                h1
+                  | Create Team and its Limit
+                p.category-content
+                  | If you would like to create new team go to Team page and create a team. You can’t add more than 3 teams in your account. If you would like to add more team just contact SkilledTree support team to help you.
+            .row
+              .col-md-8
+                img(src='/images/addteam.png', width='100%')
+            .col-md-12
+              br
+              #uid.category-info.helper.pt0
+                h1
+                  | Team UID
+                p.category-content
+                  | Team UID is the unique ID of the team. Each team will possess a unique Team UID. This UID will be generated by the HR Manager in the ‘Team’ section under ‘Settings’. Once the UID is generated, it can’t be repeated again. This Team UID can be shared with the Employees in the organization. Employees can create ‘SkilledTree’ account  by entering the Team UID which they have been provided in the registration page. Eventually, Employees who created the account with the Team UID will be grouped into new team.
+            .row
+              .col-md-8
+                img(src='/images/teamuid.png', width='100%')
+    // End of One Page Content
+    script(src='https://s3.amazonaws.com/skilledtree-public/all.js')
+    // Google Analytics: change UA-XXXXX-X to be your site's ID.
+    //
+      <script>
+      (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+      function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+      e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+      e.src='//www.google-analytics.com/analytics.js';
+      r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+      ga('create','UA-XXXXX-X','auto');ga('send','pageview');
+      </script>

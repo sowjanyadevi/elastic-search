@@ -1,0 +1,164 @@
+extends layout
+
+block content
+    .page.js-page
+      // One Page Sidebar
+      .one-page-sidebar
+        // One Page Sidebar Header
+        .one-page-sidebar-header
+          // One Page Logo
+          .one-page-logo
+            // Logo Image
+            a.logo-image(href='/employees')
+              img(src='/images/logo2.png')
+            br
+            a.logo-image(href='/employees')
+              img(src='/images/employee.png')
+            // End of Logo Image
+          // End of One Page Logo
+          // One Page Meta
+          // End of One Page Meta
+        // End of One Page Sidebar Header
+        // One Page Nav
+        .one-page-nav-wrapper.js-custom-scrollbar
+          ul.one-page-nav.js-one-page-nav(data-prepend-to='.js-prepend-mobile-menu')
+            li.is-active
+              a(href='#referral')
+                span.one-page-nav-icon
+                  i.fa.fa-user-plus
+                | Referral Jobs
+            li
+              a(href='#resumes')
+                span.one-page-nav-icon
+                  i.fa.fa-file
+                | Resumes
+                span.fa.fa-caret-down.pull-right(style='color:grey!important;')
+              ul
+                li
+                  a(href='#Upload_Resume')
+                    span.one-page-nav-icon
+                      i.fa.fa-upload
+                    | Upload Resume
+                li
+                  a(href='#Archive')
+                    span.one-page-nav-icon
+                      i.fa.fa-archive
+                    | Archive
+                li
+                  a(href='#Search_Resumes')
+                    span.one-page-nav-icon
+                      i.fa.fa-search
+                    | Search Resumes
+                li
+                  a(href='#Download_Resume')
+                    span.one-page-nav-icon
+                      i.fa.fa-download
+                    | Download Resume
+        // End of One Page Nav
+        footer.one-page-sidebar-footer
+          | All Rights Reserved.
+          a(href='http://www.masymbol.com/', target='_blank') Masymbol Technologies
+          |  Pvt Ltd © 2016
+        // End of One Page Sidebar Footer
+      // End of One Page Sidebar
+      // One Page Content
+      .one-page-content
+        // Header
+        header.header.large.header-one-page.js-header-fixed
+          .container-fluid.container-spaced
+            .row
+              .col-md-3.col-sm-6.col-xs-5
+                .visible-sm-block.visible-xs-block
+                  // Logo Image
+                  a.logo-image(href='/')
+                    img.img-responsive(src='https://s3.amazonaws.com/skilledtree-public/logo.png', alt='logo')
+                  // End of Logo Image
+              .col-md-12.col-sm-6.col-xs-7
+                // Menu
+                nav.right.helper
+                  ul.menu.sf-menu.js-menu
+                    li
+                      a(href='/employees')
+                        i.fa.fa-home.fa-lg
+                    li
+                      a(href='/employees/introduction') Introduction 
+                    li
+                      a(href='/employees/points_and_gifts') Points & Gifts
+                    li
+                      a(href='/employees/friends') Friends 
+                    li
+                      a.active(href='/employees/Jobs') Jobs
+                    li
+                      a(href='/employees/resumes') Resumes 
+                    li
+                      a(href='/employees/header') Header
+                    li
+                      a(href='/employees/dashboard')
+                        | Dashboard
+                // End of Menu
+        // End of Header
+        #content
+          .container-fluid.container-spaced
+            .col-md-12
+              #referral.category-info.helper.pt0
+                h1 Referral Jobs
+                p.category-content
+                  | All the jobs posted by your recruitment team will be visible to you on jobs page. You can easily recommend any of your friends to each job by just adding their 
+                  br
+                  | 							Share your referral job through your installed social media app like Whatsapp, facebook and others.
+            br
+            .col-md-12
+              #resumes.category-info.helper.pt0
+                h1 Resumes
+                p.category-content
+                  | Each job has recommend / apply button you can easily recommend any of your friends. All uploaded resumes by you will be visible in Resume page.
+            br
+            .col-md-12
+              #Upload_Resume.category-info.helper.pt0
+                br
+                h1
+                  | Upload Resume
+                p.category-content
+                  | If your friend’s profile is not matching with any of the posted jobs listed in your ‘Current Openings’ page, you can upload their resume irrespective of the job directly in the ‘Resumes’ page by clicking the ‘Upload Resume’ button.
+            .row
+              .col-md-8
+                img(src='/images/upload2.png', width='100%')
+            .col-md-12
+              #Archive.category-info.helper.pt0
+                br
+                h1
+                  | Archive
+                p.category-content
+                  | You can archive your friends resume and unarchive it later.
+            .row
+              .col-md-8
+                img(src='/images/emparchive.png', width='100%')
+            br
+            br
+            .col-md-12
+              #Search_Resumes.category-info.helper.pt0
+                h1
+                  | Search Resumes
+                p.category-content
+                  | You can search the resumes by entering any of the fields listed there in the table.
+            .col-md-12
+              #Download_Resume.category-info.helper.pt0
+                h1
+                  | Download Resume
+                p.category-content
+                  | You can download your friend’s resume.
+            .row
+              .col-md-8
+                img(src='/images/empdownload.png', width='100%')
+      // End of One Page Content
+    script(src='https://s3.amazonaws.com/skilledtree-public/all.js')
+    // Google Analytics: change UA-XXXXX-X to be your site's ID.
+    //
+      <script>
+      (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+      function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+      e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+      e.src='//www.google-analytics.com/analytics.js';
+      r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+      ga('create','UA-XXXXX-X','auto');ga('send','pageview');
+      </script>

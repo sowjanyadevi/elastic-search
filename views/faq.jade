@@ -1,0 +1,406 @@
+extends layout
+
+block content
+    .page.js-page
+      // Header
+      .header.header-over.large
+        .container
+          .row
+            .col-md-2.col-sm-6.col-xs-5
+              // Logo Image
+              a.logo-image(href='/')
+                img.img-responsive(src='https://s3.amazonaws.com/skilledtree-public/logo.png', alt='logo')
+              // End of Logo Image
+              // Languages
+              // End of Languages
+            .col-md-10.col-sm-6.col-xs-7
+              // Menu
+              nav.right.helper
+                ul.menu.sf-menu.js-menu.menu-light(style='color:black !important;')
+                  li
+                    a(href='/')
+                      i.fa.fa-home.fa-2x
+                  li
+                    a(href='/hr_head') HR Head 
+                  li
+                    a(href='/hr_regional') HR Regional 
+                  li
+                    a(href='/hr_managers')
+                      | HR Manager
+                  li
+                    a(href='/recruiter') Recruiter
+                  li
+                    a(href='/employees') Employees
+                  li
+                    a(href='/friends') Friends
+                  li
+                    a.active(href='/faq') FAQs
+              // End of Menu
+      // End of Header
+      // Header Back
+      .header-back.header-back-default.header-back-large
+        .header-back-container
+          .container
+            .row
+              .col-md-12
+                .page-info.helper.center
+                  h1.page-title(style='color:white !important;') FAQ
+                  h2.page-description(style='color:white !important;') Hire.  Quality.  Candidates.
+      // End of Header
+      // Header Back
+      // End of Header Back
+      #content
+        .container
+          .row
+            .col-md-12
+              .row
+                .col-md-6
+                  // FAQ Category
+                  .faq-table-of-contents
+                    i.fa.fa-user.fa-3x
+                    h3.faq-table-of-contents-title
+                      a.js-scroll-to(href='#', data-target='#job') Job Seeker
+                    ul.faq-table-of-contents-list
+                      li
+                        a.js-scroll-to(href='#', data-target='#js-structure') What is SkilledTree?
+                      li
+                        a.js-scroll-to(href='#', data-target='#file-structre') How it is different than any other professional network?
+                      li
+                        a.js-scroll-to(href='#', data-target='#css-preprocessor') For whom the site is?
+                      li
+                        a.js-scroll-to(href='#', data-target='#html-structure') Who can create a profile in this site?
+                      li
+                        a.js-scroll-to(href='#', data-target='#css3-structure')
+                          | ......More
+                  // End of FAQ Category
+                .col-md-6
+                  // FAQ Category
+                  .faq-table-of-contents
+                    i.fa.fa-users.fa-3x
+                    h3.faq-table-of-contents-title
+                      a.js-scroll-to(href='#', data-target='#recruiter') Recruiter
+                    ul.faq-table-of-contents-list
+                      li
+                        a.js-scroll-to(href='#', data-target='#theme-color') What this SkilledTree is all about?
+                      li
+                        a.js-scroll-to(href='#', data-target='#font-family') How it is different than any other professional network?
+                      li
+                        a.js-scroll-to(href='#', data-target='#logo-image') Is this site for recruiters?
+                      li
+                        a.js-scroll-to(href='#', data-target='#add-menu-item') How much it costs to me?
+                      li
+                        a.js-scroll-to(href='#', data-target='#add1')
+                          | ......More
+                  // End of FAQ Category
+              .row
+                .col-md-6
+                  // FAQ Category
+                  .faq-table-of-contents
+                    i.fa.fa-user-plus.fa-3x
+                    h3.faq-table-of-contents-title
+                      a.js-scroll-to(href='#', data-target='#referrer') Referrer
+                    ul.faq-table-of-contents-list
+                      li
+                        a.js-scroll-to(href='#', data-target='#browser-support') How does this referral work?
+                      li
+                        a.js-scroll-to(href='#', data-target='#device-support') What is my monetary gains from referral jobs?
+                      li
+                        a.js-scroll-to(href='#', data-target='#device1') Is there any risk of referring somebody?
+                      li
+                        a.js-scroll-to(href='#', data-target='#device2') Can I refer anyone?
+                      li
+                        a.js-scroll-to(href='#', data-target='#browser-support')
+                          | ......More
+                .col-md-6
+                  .faq-table-of-contents
+                    i.fa.fa-connectdevelop.fa-3x
+                    h3.faq-table-of-contents-title
+                      a.js-scroll-to(href='#', data-target='#networking') Networking
+                    ul.faq-table-of-contents-list
+                      li
+                        a.js-scroll-to(href='#', data-target='#source1') What is referral networking?
+                      li
+                        a.js-scroll-to(href='#', data-target='#source2') Why should I accept invitation to join this network?
+                      li
+                        a.js-scroll-to(href='#', data-target='#source3') Can I invite anyone in my network?
+                      li
+                        a.js-scroll-to(href='#', data-target='#source4') Shall I refer anyone?
+                      li
+                        a.js-scroll-to(href='#', data-target='#source5') Why this network is not open to all?
+              h3#job.faq-category-title Job Seeker
+              // FAQ Article
+              #my-faq.faq.js-faq
+                #js-structure.faq-article
+                  h4.faq-article-title What is SkilledTree?
+                  .faq-article-content
+                    p
+                      | It is a referral job networking site. In this site talent meets the talent hunters. Here professionals who want to find the right job and opportunity to work with the right kind of people create their profile. Properly use the branding options to attract attention from recruiters. Here members get option to get referred to the suitable job by their colleagues or the friends already in the network.
+                      | On the other hand, HRs post jobs and wait for their employees to refer suitable and the most relevant candidates for any vacancy. As referrals come from reliable source, relevancy is higher. Unknown persons cannot apply as they are not in network by any means, obviously the relevancy is higher.
+                // End of FAQ Article
+                // FAQ Article
+                #file-structre.faq-article
+                  h4.faq-article-title How it is different than any other professional network?
+                  .faq-article-content
+                    p
+                      | While in other sites you can join anytime and start networking, in SkilledTree you have to get invitation. So you understand, if people like your credentials or friends or HRs feel to keep you in network, they will invite you. It is a site for serious minded people to do the referral networking either for hiring talented people or getting referred to dream job.
+                // End of FAQ Article
+                // FAQ Article
+                #css-preprocessor.faq-article
+                  h4.faq-article-title For whom the site is?
+                  .faq-article-content
+                    p
+                      | It is a site for professionals with different talents or skill sets. It is also works as a source of recruiting talented professionals through referrals.
+                #html-structure.faq-article
+                  h4.faq-article-title Who can create a profile in this site?
+                  .faq-article-content
+                    p
+                      | This site is for anybody serious about professional life and wants to find a genuine referral to a suitable job. However, people can only join if they are invited to join by the existing members.
+                #css3-structure.faq-article
+                  h4.faq-article-title Who posts a job here?
+                  .faq-article-content
+                    p
+                      | Only HR recruiters can create a job posting. If you are a HR of a company in need of some expert or fresher, you can post job. You need to create your own network with employees, then through them you get referred candidates. Professionals can only share jobs among the network and via social networking sites.
+                #css3-structure.faq-article
+                  h4.faq-article-title How beneficial is having an account in skilledTree?
+                  .faq-article-content
+                    p
+                      | Well, creating a professional account is always beneficial. Here an account/profile with genuine connections would lead you to land to the right job. Most importantly you are referred by your colleague or friends in network. Your friend knows the position and the company status so they can refer you to the right kind of job he or she has knowledge.
+                #css3-structure.faq-article
+                  h4.faq-article-title Isn’t it another professional account? What’s the difference?
+                  .faq-article-content
+                    p
+                      | It is true that it a site for the professionals but with a big difference. It is no way something to chitchat, or update status. It is not having so many complexity or functionality. In simple words, it is a referral job site with a primary goal to put right person at the right place through genuine referral by the connections.
+                #css3-structure.faq-article
+                  h4.faq-article-title Can I get a referral from someone not in my connection?
+                  .faq-article-content
+                    p
+                      | No, you can find out jobs relevant/matching with your profile but if you are not invited by the job creator or you are not in the network from where the job is posted - you cannot apply. The solution to this is send friend request to the person. If the person adds you to the network, you become eligible to apply.
+                #css3-structure.faq-article
+                  h4.faq-article-title Can I get a recruiter contact details directly?
+                  .faq-article-content
+                    p
+                      | No, it is not possible directly. If you are in a circle of recruiters then only you come to know of the link. So be in connection.
+                #css3-structure.faq-article
+                  h4.faq-article-title Is it possible to get a recruiter’s contact details directly?
+                  .faq-article-content
+                    p
+                      | No, it is not possible directly. If you are in a circle of recruiters or in profile of the recruiters details is shared with connections or in public, then you can see that.
+                #css3-structure.faq-article
+                  h4.faq-article-title Do you guarantee to provide a job to every member?
+                  .faq-article-content
+                    p
+                      | There is no guarantee for a job from skilledTree. But generally everyone gets a referral job from the connection or notification for every new post. It is up to be in network of most number of people.
+                #css3-structure.faq-article
+                  h4.faq-article-title When I become jobless in how many days this site can give me a job?
+                  .faq-article-content
+                    p
+                      | No, we do not guarantee a job to the jobless. This is only a referral job site. Here you create your connection with professionals and they may refer you for a job anytime. Hope for the best always..
+                #css3-structure.faq-article
+                  h4.faq-article-title I am a member but I am yet to get a referral?
+                  .faq-article-content
+                    p
+                      | Creating a profile in skilledTree does not mean that you will get a referral. It is up to your active presence and proper connection (networking) creation that helps in increasing or getting referral jobs.
+                #css3-structure.faq-article
+                  h4.faq-article-title I do not find people frequently getting online in this site, why?
+                  .faq-article-content
+                    p
+                      | Getting online here is for adding people in network. On the other hand, you may not find others online means you may have lesser number of connections and followers. You need to increase your connection and remember people are adding more connection in their network, you only have to add them in your network to stay visible.
+                #css3-structure.faq-article
+                  h4.faq-article-title Is it secure to share my information with you people?
+                  .faq-article-content
+                    p
+                      | It is absolutely secure to share your profile information with us. But it is advised that you do not share anything personal data (banking details, social security numbers or anything sensitive.) Only share the information asked for – do not add anything extra.
+                #css3-structure.faq-article
+                  h4.faq-article-title Can we get some monetary gains from the referral jobs?
+                  .faq-article-content
+                    p
+                      | No, we do not pay anything. Only recruiters pay separately to people from whose connection chain a candidate has been selected, we do not involve ourselves in the process.
+                // End of FAQ Article
+                h3#recruiter.faq-category-title Recruiter
+                // FAQ Article
+                #theme-color.faq-article
+                  h4.faq-article-title What this SkilledTree is all about?
+                  .faq-article-content
+                    p
+                      | It is a referral job networking site. In this site talent meets the talent hunters. Here professionals who want to find the right job and opportunity to work with the right kind of people create their profile. Properly use the branding options to attract attention from recruiters. Here members get option to get referred to the suitable job by their colleagues or the friends already in the network. On the other hand, HRs post jobs and wait for their employees to refer suitable and the most relevant candidates for any vacancy. As referrals come from reliable source, relevancy is higher. Unknown persons cannot apply as they are not in network by any means, obviously the relevancy is higher.
+                #font-family.faq-article
+                  h4.faq-article-title How it is different than any other professional network?
+                  .faq-article-content
+                    p
+                      | While in other sites you can join anytime and start networking, in SkilledTree is all is through invitation. So you understand, if people like credentials of one person or friend to keep in network, they invite them. On the other hand as HR recruiter you can invite your employees or someone in the network when you feel they are worth it. It is a site for serious minded people to do the referral networking either for hiring talented people or getting referred to dream job.
+                #logo-image.faq-article
+                  h4.faq-article-title Is this site for recruiters?
+                  .faq-article-content
+                    p
+                      | The site is a source of recruiting talented professionals through referrals. HRs create account, invite employees and other people in network to join first. Then HRs post jobs and people in network apply through referral networking.
+                #add-menu-item.faq-article
+                  h4.faq-article-title How much it costs to me?
+                  .faq-article-content
+                    p
+                      | HR recruiters can directly create account in this site. After creating their network they add employees and can invite others in SkilledTree to join. Nobody can join without invitation so you have to invite people to join your network..
+                #add1.faq-article
+                  h4.faq-article-title Can I post a job here?
+                  .faq-article-content
+                    p
+                      | If you are a HR recruiter, then only you can create job postings. HRs create posting and people in their network get notified to apply. Even friends of employees also get notification if they are in network or invited to.
+                #add1.faq-article
+                  h4.faq-article-title What is my benefit to create an account in skilledTree?
+                  .faq-article-content
+                    p
+                      | It is very helpful to source talented people. Without having to sort gems from the pile of stones, only relevant referral candidates are found from known resources. Most importantly source is own employees and people in their network. Applicants come to know about the position and the company status and then apply. So referred candidates are most relevant.
+                #add1.faq-article
+                  h4.faq-article-title Will it cost me any subscription?
+                  .faq-article-content
+                    p
+                      | Yes, the subscription or membership to skilledTree very nominal charges than any other similar sites. You need to purchase subscription for adding basic profile creation and getting any referral candidate. However, first posting is free but for more posts HRs need to pay nominal posting chargers.
+                #add1.faq-article
+                  h4.faq-article-title Why should I post a job here?
+                  .faq-article-content
+                    p
+                      ul
+                        | Posting a job in SkilledTree is always beneficial in many ways. The most important reasons are.
+                        li
+                          | It is cost effective than other job portals as it is not a pure job portal but referral network
+                        li
+                          | It is reliable as referrals come from employee circle not from anyone outside & unknown
+                        li Relevancy of the candidates are higher as it is coming from referrals
+                        li
+                          | It saves time as it is not bulk applications but a few genuine applicants referred
+                #add1.faq-article
+                  h4.faq-article-title How cost effective it is to post a referral job?
+                  .faq-article-content
+                    p
+                      | It is always been cost saving to post a job in SkilledTree. First of all you do not need to pay anything to post the first referral job. After you find posting here really gives you success, you can go for other postings at a very nominal cost with lots of flexible refund options added.
+                #add1.faq-article
+                  h4.faq-article-title How SkilledTree decrease the risk of hiring?
+                  .faq-article-content
+                    p
+                      | It is very simple! When you source candidate from other places, you hardly know about them, except the resume. However, sourcing from SkilledTree is always reliable and very low at risk as the candidates are known to your employees (they are either friends or colleagues). So you can avoid the risk of hiring irrelevant candidate.
+                #add1.faq-article
+                  h4.faq-article-title Can I source candidates outside of my network?
+                  .faq-article-content
+                    p
+                      | Yes, you can but that is up to your discretion. Generally, our network allows to get applicants who are in your network. But sometimes, you may find out a brilliant candidate outside your network but in SkilledTree. In such cases, you can easily invite people to apply for joining your network first and then they can apply for the job posts
+                #add1.faq-article
+                  h4.faq-article-title Why people are not frequently getting online?
+                  .faq-article-content
+                    p
+                      | Getting online here is for finding referral job basically or to post jobs (for HRs). On the other hand, you may not find others online means you may have lesser number of connections and followers. You need to increase your connection and remember people are finding referral jobs, who knows next time you post a job and you get lots of applications.
+                #add1.faq-article
+                  h4.faq-article-title How secure it is to share information publicly?
+                  .faq-article-content
+                    p
+                      | It is absolutely secure to share your profile and company information with us. But it is advised that you do not share anything personal or official data (banking details, social security numbers or anything sensitive.) Only share the information asked for – do not add anything extra.
+                h3#referrer.faq-category-title Referrer
+                #browser-support.faq-article
+                  h4.faq-article-title How does this referral work?
+                  .faq-article-content
+                    p
+                      b Professionals network to get job referrals
+                      br
+                      | 								SkilledTree is a referral job networking site. So here everything works with the primary idea of networking and referrals. Professionals join on invitation and start adding people in network. Slowly network grows and they can explore opportunities of applying referral job posts available automatically from friends in network
+                    p
+                      b HRs posts jobs to find relevant candidates
+                      br
+                      | 								 HR posts a job in SkilledTree network. Employees in the network start sharing those in different media and suitable candidates start applying. Relevancy is higher as referrals come from known source- your employees.
+                #device-support.faq-article
+                  h4.faq-article-title What is my monetary gains from referral jobs?
+                  .faq-article-content
+                    p
+                      | Yes, but recruiters only pay separately to people from whose connection chain a candidate has been selected, we do not involve ourselves in the process. Generally, we ask HRs to openly announce the referral money they will provide to the person referring a candidate for any position. So there is always a chance of earning referral money from the recruiters, provided candidates get selected.
+                #device1.faq-article
+                  h4.faq-article-title Is there any risk of referring somebody?
+                  .faq-article-content
+                    p
+                      | First of all you are not manually referring anybody. People get notified of the job post available through you. They read and know about the job; they can ask about those from you also. So it is their responsibility to apply or not. On the other hand, HRs are screening and may ask about the candidate from you. You tell them the truth so it again becomes their discretion to hire or not. You do not have any liability.
+                #device2.faq-article
+                  h4.faq-article-title Can I refer anyone?
+                  .faq-article-content
+                    p
+                      | Actually you are not doing any referral manually. Everything is automatic. However, you can notify them personally to any post.Remember, they have to join your network to apply to any referral post. So ask people to join and if they remain alert to mails and visit the site regularly, they know about your posts and can apply.
+                h3#networking.faq-category-title Networking
+                #source1.faq-article
+                  h4.faq-article-title What is referral networking?
+                  .faq-article-content
+                    p
+                      | It is a networking that grows for referrals. The main reason of joining this network is to get referred to desired jobs. People only can join when they are invited and once they are in network, they get notified to all referral posting automatically. So easily they can apply to a job and possibilities of hiring is always there.
+                #source2.faq-article
+                  h4.faq-article-title Why should I accept invitation to join this network?
+                  .faq-article-content
+                    p
+                      | If you are serious about landing on the right organization that requires your talent, you have to accept invitation to join. More on that when someone feel you suitable to apply any job, they invite you. So creating an account here can help brighten your career with bigger job opportunities. Only be in network of more people to increase chances of getting attention and receiving notification from maximum number of people
+                #source3.faq-article
+                  h4.faq-article-title Can I invite anyone in my network?
+                  .faq-article-content
+                    p
+                      | Yes, you can but you have to keep in mind that this is not a socializing platform. This is purely a referral job networking site. So we request you to invite serious people to add serious people who are looking to find great career via referrals.
+                #source4.faq-article
+                  h4.faq-article-title Shall I refer anyone?
+                  .faq-article-content
+                    p
+                      | This network is to help people reach their desired or dreamt job via referrals. So the primary gain is the most suitable job. Besides this, when network grows, people come close in network with different types of people with varied expertise and experiences - mutual enrichment of knowledge is possible. However, connection with experts is ever a higher possibility.
+                #source5.faq-article
+                  h4.faq-article-title Why this network is not open to all?
+                  .faq-article-content
+                    p
+                      | We believe in serious and genuine referral creation. So we have kept this network on invitation basis. So serious people would find out their friends and when those friends will add them to network or the time anybody gets invitation, they can join SkilledTree. We do this to prevent spamming.
+      // Footer
+      footer.js-footer-is-fixed
+        // Footer Extended
+        .footer
+          .container
+            .row
+              .col-md-3.col-sm-3.col-xs-12
+                .footer-logo-wrapper
+                  // Logo Image
+                  a.logo-image(href='/')
+                    img(src='https://s3.amazonaws.com/skilledtree-public/skilledtree-logo.png', alt='logo')
+                  // End of Logo Image
+                  // Slogan
+                  p.slogan
+                    | Hire.
+                    br
+                    | Quality.
+                    br
+                    | Candidates.
+                  // End of Slogan
+              .col-md-9.col-sm-9.col-xs-12
+                .footer-wrapper
+                  // Scroll top
+                  span.scroll-top.js-scroll-top
+                    i.fa.fa-angle-up
+                  ul.footer-menu.helper.right
+                    li
+                      a(href='/hr_head')  HR Head
+                    li
+                      a(href='/hr_regional')  HR Regional
+                    li
+                      a(href='/hr_managers')  HR Manager
+                    li
+                      a(href='/recruiter')  Recruiter 
+                    li
+                      a(href='/employees')  Employees 
+                    li
+                      a(href='/friends')  Friends 
+                    li
+                      a(href='/faq') FAQs
+                  // End of Footer Menu
+                  // Copyright
+                  p.copyright.helper.right
+                    | All Rights Reserved.
+                    a(href='https://www.skilledtree.com', target='_blank') Masymbol Technologies
+                    |  Pvt Ltd © 2016
+                  // End of Copyright
+        // End of Footer Default
+      // End of Footer
+    script(src='https://s3.amazonaws.com/skilledtree-public/all.js')
+    // Google Analytics: change UA-XXXXX-X to be your site's ID.
+    //
+      <script>
+      (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+      function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+      e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+      e.src='//www.google-analytics.com/analytics.js';
+      r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+      ga('create','UA-XXXXX-X','auto');ga('send','pageview');
+      </script>

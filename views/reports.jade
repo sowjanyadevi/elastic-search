@@ -1,0 +1,196 @@
+extends layout
+
+block content
+    .page.js-page
+      // One Page Sidebar
+      .one-page-sidebar
+        // One Page Sidebar Header
+        .one-page-sidebar-header
+          // One Page Logo
+          .one-page-logo
+            // Logo Image
+            a.logo-image(href='/hr_managers')
+              img(src='/images/logo2.png')
+            br
+            a.logo-image(href='/hr_managers')
+              img(src='/images/manager.png')
+        .one-page-nav-wrapper.js-custom-scrollbar
+          ul.one-page-nav.js-one-page-nav(data-prepend-to='.js-prepend-mobile-menu')
+            li.is-active
+              a(href='#job')
+                span.one-page-nav-icon
+                  i.fa.fa-file
+                | Job Report
+            li
+              a(href='#job_posting')
+                span.one-page-nav-icon
+                  i.fa.fa-envelope
+                | Job Posting Report
+            li
+              a(href='#all_job')
+                span.one-page-nav-icon
+                  i.fa.fa-bar-chart
+                | All job Status
+            li
+              a(href='#recruiter_reports')
+                span.one-page-nav-icon
+                  i.fa.fa-line-chart
+                | Recruiter Reports
+            li
+              a(href='#download_reports')
+                span.one-page-nav-icon
+                  i.fa.fa-download
+                | Download Reports
+                span.fa.fa-caret-down.pull-right(style='color:grey!important;')
+              ul
+                li
+                  a(href='#excel')
+                    span.one-page-nav-icon
+                      i.fa.fa-file-excel-o
+                    | Excel
+                li
+                  a(href='#pdf')
+                    span.one-page-nav-icon
+                      i.fa.fa-file-pdf-o
+                    | PDF
+            li
+              a(href='#hr_report')
+                span.one-page-nav-icon
+                  i.fa.fa-file
+                | HR Report
+        // End of One Page Nav
+        // One Page Sidebar Footer
+        footer.one-page-sidebar-footer
+          | All Rights Reserved.
+          a(href='http://www.masymbol.com/', target='_blank') Masymbol Technologies
+          |  Pvt Ltd © 2016
+        // End of One Page Sidebar Footer
+      // End of One Page Sidebar
+      // One Page Content
+      .one-page-content
+        // Header
+        header.header.large.header-one-page.js-header-fixed
+          .container-fluid.container-spaced
+            .row
+              .col-md-3.col-sm-6.col-xs-5
+                .visible-sm-block.visible-xs-block
+                  // Logo Image
+                  a.logo-image(href='/')
+                    img.img-responsive(src='https://s3.amazonaws.com/skilledtree-public/logo.png', alt='logo')
+                  // End of Logo Image
+              .col-md-9.col-sm-6.col-xs-7
+                // Menu
+                nav.right.helper
+                  ul.menu.sf-menu.js-menu
+                    li
+                      a(href='/hr_managers')
+                        i.fa.fa-home.fa-lg
+                    li
+                      a(href='/hr_managers/introduction')
+                        | Introduction
+                    li
+                      a(href='/hr_managers/team') Team
+                    li
+                      a(a='', href='#') Members
+                      ul
+                        li
+                          a(href='/hr_managers/employees') Employees
+                        li
+                          a(href='/hr_managers/recruiter') Recruiter
+                        li
+                          a(href='/hr_managers/manager') Manager
+                    li
+                      a.active(href='#') Jobs
+                      ul
+                        li
+                          a(href='/hr_managers/Jobs') Jobs
+                        li
+                          a(href='/hr_managers/resumes') Resumes
+                    li
+                      a(href='/hr_managers/gamification') Gamification
+                    li
+                      a.active(href='/hr_managers/reports') Reports
+                    li
+                      a(href='#') Branding
+                      ul
+                        li
+                          a(href='/hr_managers/career') Career Page
+                        li
+                          a(href='/hr_managers/companybrand') Company Branding
+                    li
+                      a(href='/hr_managers/dashboard') Dashboard
+                    li
+                      a(href='#') Header
+                      ul
+                        li
+                          a(href='/hr_managers/header') Header Icons
+                        li
+                          a(href='/hr_managers/settings') Settings
+                // End of Menu
+        // End of Header
+        #content
+          .container-fluid.container-spaced
+            .col-md-12
+              // Category Info
+              #job.category-info.helper.pt0
+                br
+                h1 Job Report
+                p.category-content
+                  | You can view report for open jobs. It describes the status of all candidates.
+            .col-md-12
+              #job_posting.category-info.helper.pt0
+                br
+                h1
+                  | Job Posting Report
+                p.category-content
+                  | This graph describes the recruiters who are posted the jobs in your company
+            .col-md-12
+              #all_job.category-info.helper.pt0
+                br
+                h1
+                  | All job Status
+                p.category-content
+                  | This graph describes the status of candidates for all jobs.
+            .col-md-12
+              #recruiter_reports.category-info.helper.pt0
+                br
+                h1
+                  | Recruiter Reports
+                p.category-content
+                  | These graphs describes the recruitment activities of each recruiters.
+            .col-md-12
+              #excel.category-info.helper.pt0
+                br
+                h1
+                  | Excel
+                p.category-content
+                  | Few information will be reported in the form of excel such as candidates in pipeline, Joined candidates, Rejected candidates, Employees with highest points and Team-wise total reach count with an extension of .xls.
+                  | .
+            .col-md-12
+              #pdf.category-info.helper.pt0
+                br
+                h1
+                  | PDF
+                p.category-content
+                  | Few information will be reported in the form of excel such as candidates in pipeline, Joined candidates, Rejected candidates, Employees with highest points and Team-wise total reach count with an extension of .pdf
+                  | .
+            .col-md-12
+              #hr_report.category-info.helper.pt0
+                br
+                h1
+                  | HR Report
+                p.category-content
+                  | Bar graph will be drawn based on the HRs performance towards employee referral.
+                  | .
+    // End of One Page Content
+    script(src='https://s3.amazonaws.com/skilledtree-public/all.js')
+    // Google Analytics: change UA-XXXXX-X to be your site's ID.
+    //
+      <script>
+      (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+      function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+      e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+      e.src='//www.google-analytics.com/analytics.js';
+      r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+      ga('create','UA-XXXXX-X','auto');ga('send','pageview');
+      </script>

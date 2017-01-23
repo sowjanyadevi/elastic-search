@@ -1,0 +1,280 @@
+extends layout
+
+block content
+  .page.js-page
+    // Header
+    .header.header-over.large
+      .container
+        .row
+          .col-md-2.col-sm-6.col-xs-5
+            // Logo Image
+            a.logo-image(href='/')
+              img.img-responsive(src='https://s3.amazonaws.com/skilledtree-public/logo.png', alt='logo')
+            // End of Logo Image
+            // Languages
+            // End of Languages
+          .col-md-10.col-sm-6.col-xs-7
+            // Menu
+            nav.right.helper
+              ul.menu.sf-menu.js-menu.menu-light(style='color:black !important;')
+                li
+                  a(href='/')
+                    i.fa.fa-home.fa-2x
+                li
+                  a(href='/hr_head') HR Head 
+                li
+                  a(href='/hr_regional') HR Regional 
+                li
+                  a(href='/hr_managers')
+                    | HR Manager
+                li
+                  a(href='/recruiter') Recruiter
+                li
+                  a(href='/employees') Employees
+                li
+                  a(href='/friends') Friends
+                li
+                  a(href='/faq') FAQs
+                li
+                  form(method='POST', action='/search')
+                    input(type='text', name='searchterm')
+                    button.btn.btn-large Submit 
+            // End of Menu
+    // End of Header
+    // Header Back
+    .header-back.header-back-bg-web.header-back-large
+      .header-back-container
+        .container
+          .row
+            .col-md-12
+              // Page Info
+              .page-info.helper.center
+                h1.page-title(style='color:white !important;') SkilledTree
+                h2.page-description(style='color:white !important;') Hire.  Quality.  Candidates.
+              // End Page Info
+    #content
+      #container
+        .promo-title-wrapper
+          h3.promo-title SkilledTree Documents
+        // End of Promo Title
+        .row
+          .col-md-6.col-sm-6
+            // Testimonials
+            .testimonial
+              // <i class="fa fa-user fa-3x box-icon2 pe-7s-eyedropper "></i>
+              img.img-responsive(src='/images/head2.png', style='width: 500px;')
+              a(href='/hr_head/introduction')
+                h4.testimonial-name
+                  br
+                  | HR Head
+              p.testimonial-text
+                | Hr Head is devised to manage the general operation such as adding the regions and  assigning HR Regional managers under each regions. This functionality can be enabled by the HR Managers in SkilledTree. Hr Head will receive the login credentials to his Email box. There will be only one HR Head in each company. HR Head can have multiple HR Regional Managers under the regions where he assigned them.
+              br
+              .call-to-action-buttons
+                center
+                  a.call-to-action-button(href='/hr_head/introduction') Learn More
+            // End of Testimonials
+          .col-md-6.col-sm-6
+            // Testimonials
+            .testimonial
+              // <i class="fa fa-user fa-3x box-icon2 pe-7s-eyedropper "></i>
+              img.img-responsive(src='/images/regional2.png', style='width: 500px;')
+              a(href='/hr_regional/introduction')
+                h4.testimonial-name
+                  br
+                  | HR Regional
+              p.testimonial-text
+                | Login credentials will be sent to his email box once it’s added by the HR Head. Regional Managers can have multiple HR Managers under his region.He is devised to add the cities and assign HR Managers under those cities.He can go through all the referral resumes which are uploaded by the employees  and undergo the employees list who are under various cities in his region.
+              br
+              .call-to-action-buttons
+                center
+                  a.call-to-action-button(href='/hr_regional/introduction') Learn More
+            // End of Testimonials
+          .col-md-6.col-sm-6
+            // Testimonials
+            .testimonial
+              // <i class="fa fa-user fa-3x box-icon2 pe-7s-eyedropper "></i>
+              img.img-responsive(src='/images/managers.jpg', style='width: 500px;')
+              a(href='/hr_managers/dashboard')
+                h4.testimonial-name
+                  br
+                  | HR Manager
+              p.testimonial-text
+                | As a HR Manager, he needs to be act as a single point of contact for internal recruiters, managers & employees. The major responsibilities for him are to add employees, add team, post job, add recruiters, assign recruiters, manage the referral resumes etc., There is an additional feature called ‘Gamification’. You can send a request to SkilledTree and this will be enabled instantly after being discussed. HR Manager can give admin access to any of his HR Recruiters by enabling it.
+              br
+              .call-to-action-buttons
+                center
+                  a.call-to-action-button(href='/hr_managers/dashboard') Learn More
+            // End of Testimonials
+          .col-md-6.col-sm-6
+            // Testimonials
+            .testimonial
+              // <i class="fa fa-user-o fa-3x box-icon2 pe-7s-eyedropper "></i>
+              img.img-responsive(src='/images/recruit.jpg', style='width: 500px;')
+              a(href='/recruiter/dashboard')
+                h4.testimonial-name
+                  br
+                  | Recruiter
+              p.testimonial-text
+                | HR Recruiters are someone who can handle the interview process and sending the feedback of the referrals to the HR Managers. They can take up the incharge of the recruitment process by assigning the job to themselves. HR Recruiters will not be having much functionalities like HR Managers. He will be allowed to do all the functions like HR Managers only if the admin access has been given to him. They can decide the suitable candidate and make them to get joined and send them out the rest by rejecting it.
+              br
+              .call-to-action-buttons
+                center
+                  a.call-to-action-button(href='/recruiter/dashboard') Learn More
+            // End of Testimonials
+        br
+        .row
+          .col-md-6.col-sm-6
+            // Testimonials
+            .testimonial
+              // <i class="fa fa-users fa-3x box-icon2 pe-7s-eyedropper"></i>
+              img.img-responsive(src='/images/emp.jpg', style='width: 500px;')
+              a(href='/employees/dashboard')
+                h4.testimonial-name
+                  br
+                  | Employees
+              p.testimonial-text
+                | Employees will play the major role of referring their friends to the portal by adding them manually or by uploading their information in the form of Excel or by importing the contacts from Gmail, Yahoo and Outlook. They can track the status of their friends’ referral resumes.They will be receiving the referral reward if it is opted for them.
+              br
+              .call-to-action-buttons
+                center
+                  a.call-to-action-button(href='/employees/dashboard') Learn More
+            // End of Testimonials
+          .col-md-6.col-sm-6
+            // Testimonials
+            .testimonial
+              // <i class="fa fa-handshake-o fa-3x box-icon2 pe-7s-eyedropper"></i>
+              img.img-responsive(src='/images/friend.jpg', style='width: 500px;')
+              a(href='/friends/current_openings')
+                h4.testimonial-name
+                  br
+                  | Friends
+              p.testimonial-text
+                | Once their friends uploaded his/her resume, SkilledTree account will be created for them automatically. They can further apply to any number of jobs based on the required skills. They can refer their friends to any jobs by uploading their friends’ resume. As a working professional, he/she can tweet any referral job in his/her company.
+              br
+              .call-to-action-buttons
+                center
+                  a.call-to-action-button(href='/friends/current_openings') Learn More
+            // End of Testimonials
+      .container
+        .row
+          .col-md-12
+            // Promo Title
+            .promo-title-wrapper.helper.pt60
+              h3.promo-title SkilledTree Documents
+            // End of Promo Title
+            .row
+              .col-md-6
+                // Box
+                .box.box-small-icon-alt
+                  i.fa.fa-connectdevelop.box-icon.pe-7s-eyedropper
+                  a(href='/hr_managers/employees')
+                    h4.box-title Multilevel Networking
+                  p.box-description
+                    | Add your employees and let them add their contacts. Now,  your jobs will reach a massive number of job seekers with our multi level networking.
+                // End of Box
+              .col-md-6
+                // Box
+                .box.box-small-icon-alt
+                  i.fa.fa-file.pe-7s-eyedropper.box-icon
+                  a(href='/hr_managers/resumes')
+                    h4.box-title Resume Repository
+                  p.box-description
+                    | A central repository for where you and your employees can upload resumes and store it for future recruitment. Each resume can be tagged with the respective skill sets.
+                    | .
+                // End of Box
+            .row
+              .col-md-6
+                // Box
+                .box.box-small-icon-alt
+                  i.fa.fa-user-plus.pe-7s-tools.box-icon
+                  a(href='/hr_managers/employees')
+                    h4.box-title Employees Integration
+                  p.box-description
+                    | We have integrated various ways to add your employees and other prospects.You can upload an email list, add email addresses manually, use your email client to send invitations.
+                // End of Box
+              .col-md-6
+                // Box
+                .box.box-small-icon-alt
+                  i.fa.fa-map-marker.pe-7s-cup.box-icon
+                  a(href='/hr_managers/resumes')
+                    h4.box-title In-built Application Tracking System
+                  p.box-description
+                    | You can track each applications received for each job posts, view profile of applicants, update the status of their applications and communicate with them using a messaging system.
+                // End of Box
+              .col-md-6
+                // Box
+                .box.box-small-icon-alt
+                  i.fa.fa-gamepad.pe-7s-cup.box-icon
+                  a(href='/hr_managers/gamification')
+                    h4.box-title Gamification
+                  p.box-description
+                    | To motivate active participation, set up gamification to reward employees with points for certain activities. These points can be redeemed for gifts whenever employees wish.
+                // End of Box
+              .col-md-6
+                // Box
+                .box.box-small-icon-alt
+                  i.fa.fa-users.pe-7s-cup.box-icon
+                  a(href='/hr_managers/team')
+                    h4.box-title Team
+                  p.box-description
+                    | Add recruiters to the network. Whenever you posts a job, you can tag a recruiter to the job post so that they can carry out the recruitment process from the time candidates apply for the job.
+                // End of Box
+            // Promo Title
+            // End of Promo Title
+    // End of Video Trigger Modal
+    // Footer
+    footer.js-footer-is-fixed
+      // Footer Extended
+      // End of Footer Extended
+      // Footer Default
+      .footer
+        .container
+          .row
+            .col-md-3.col-sm-3.col-xs-12
+              .footer-logo-wrapper
+                // Logo Image
+                a.logo-image(href='index.html')
+                  img(src='https://s3.amazonaws.com/skilledtree-public/skilledtree-logo.png', alt='logo')
+                // End of Logo Image
+                // Slogan
+                p.slogan
+                  | Hire.
+                  br
+                  | Quality.
+                  br
+                  | Candidates.
+                // End of Slogan
+            .col-md-9.col-sm-9.col-xs-12
+              .footer-wrapper
+                // Scroll top
+                span.scroll-top.js-scroll-top
+                  i.fa.fa-angle-up
+                // End of Scroll top
+                // Version
+                // End of Version
+                // Footer Menu
+                ul.footer-menu.helper.right
+                  li
+                    a(href='/hr_head')  HR Head
+                  li
+                    a(href='/hr_regional')  HR Regional
+                  li
+                    a(href='/hr_managers')  HR Manager 
+                  li
+                    a(href='/recruiter')  Recruiter 
+                  li
+                    a(href='/employees')  Employees
+                  li
+                    a(href='/friends') Friends
+                  li
+                    a(href='/faq') FAQs
+                // End of Footer Menu
+                // Copyright
+                // End of Copyright
+                p.copyright.helper.right
+                  | All Rights Reserved.
+                  a(href='http://www.masymbol.com/', target='_blank') Masymbol Technologies
+                  |  Pvt Ltd © 2016
+      // End of Footer Default
+    // End of Footer
