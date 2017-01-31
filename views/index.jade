@@ -35,11 +35,11 @@ block content
                   a(href='/friends') Friends
                 li
                   a(href='/faq') FAQs
-                li
-                  form(method='POST', action='/search')
-                    input(type='text', name='searchterm')
-                    button.btn.btn-large Submit 
-            // End of Menu
+                
+                li.col-md-3.pull-right
+                   form(method='POST', action='/search')
+                    input(type='text', placeholder="Search.......",name='searchterm')
+                    input.button-search(type='submit', value='Go!')
     // End of Header
     // Header Back
     .header-back.header-back-bg-web.header-back-large

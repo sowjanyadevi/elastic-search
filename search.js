@@ -9,9 +9,10 @@ router.post('/', function(req, res, next) {
   type: 'constituencies',
   body: {
     query: {
-      match: { "ConstituencyName": term }
-    },
-  }
+       match: { "ConstituencyName": term}
+  
+    }
+   }  
 },function (error, response,status) {
     if (error){
       console.log("search error: "+error)
