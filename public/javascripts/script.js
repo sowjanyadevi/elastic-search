@@ -11,6 +11,7 @@ var searchIcons = $('.js-search-minimal-icon');
 			btn.click(function () {
 				if(!input.is(':visible')){
 					input.fadeIn('fast');
+					input.addClass('col-md-3');
 					$('input', input).focus();
 				}else{
 					input.fadeOut('fast');
