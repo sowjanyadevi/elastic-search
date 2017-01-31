@@ -9207,7 +9207,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   display: none;
   position: relative;
   top: 6px;
-  right: 42px;
+  right: 0px;
   width: 180px;
   height: 30px;
   background-color: #f6f7f8;

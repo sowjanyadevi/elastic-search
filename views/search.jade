@@ -8,11 +8,16 @@ block content
             .col-md-12
               // Category Info
               #simple.category-info
-                each value in response.hits.hits
-                  each hit in value
-                    if hit.url != nil
-                      .note(style='box-shadow: inset 5px 0px 0px 0px #ff530d;').js-note
-                        h4.note-title  
-                          a(href="#{hit.ConstituencyType}", target='_blank') #{hit.url} 
-                        p.note-description
-                          p #{hit.ConstituencyName}
+                if response.hits.total != 0
+                  each value in response.hits.hits
+                    each hit in value
+                      if hit.url != nil
+                        .note(style='box-shadow: inset 5px 0px 0px 0px #ff530d;').js-note
+                          h4.note-title  
+                            a(href="#{hit.ConstituencyType}", target='_blank') #{hit.url} 
+                          p.note-description
+                            p #{hit.ConstituencyName}
+                else                  
+                  .note(style='box-shadow: inset 5px 0px 0px 0px #ff530d;').js-note
+                    h4.note-title  
+                      p No results found.................                     
