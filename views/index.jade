@@ -37,9 +37,11 @@ block content
                   a(href='/faq') FAQs
                 
                 li.col-md-3.pull-right
-                   form(method='POST', action='/search')
-                    input(type='text', placeholder="Search.......",name='searchterm')
-                    input.button-search(type='submit', value='Go!')
+                   .search-minimal.js-search-minimal
+                      form(method='POST', action='/search')
+                        .search-minimal-input.js-search-minimal-input
+                          input(type='text', name='searchterm')
+                        i.fa.fa-search.search-minimal-icon.js-search-minimal-icon
     // End of Header
     // Header Back
     .header-back.header-back-bg-web.header-back-large
@@ -278,3 +280,4 @@ block content
                   |  Pvt Ltd © 2016
       // End of Footer Default
     // End of Footer
+
