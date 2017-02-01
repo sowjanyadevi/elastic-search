@@ -28,6 +28,11 @@ router.get('/hr_head/header',function(req,res, next){
   //__dirname : It will resolve to your project folder.
 });
 
+router.get('/panel',function(req,res, next){
+   res.render('jpanel', { title: 'Express' });
+  //__dirname : It will resolve to your project folder.
+});
+
 //******************************* HR REGIONAL *************************************//
 router.get('/hr_regional',function(req,res, next){
    res.render('hr_regional', { title: 'Express' });
