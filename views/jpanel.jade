@@ -1,268 +1,251 @@
 extends layout
 
 block content
-    .page.js-page
-      // Header
-      .header.header-over.large
+  .page.js-page
+    // Header
+    .header.header-over.large
+      .container11
+        .row
+          .col-md-2.col-sm-6.col-xs-5
+            // Logo Image
+            a.logo-image(href='/')
+              img.img-responsive(src='https://s3.amazonaws.com/skilledtree-public/logo.png', alt='logo')
+            // End of Logo Image
+            // Languages
+            // End of Languages
+          .col-md-10.col-sm-6.col-xs-7
+            // Menu
+            nav.right.helper
+              ul.menu.sf-menu.js-menu.menu-light(style='color:black !important;')
+                li
+                  a(href='/')
+                    i.fa.fa-home.fa-2x
+                li
+                  a(href='/overview') Overview
+                li
+                  a(href='/hr_head') HR Head 
+                li
+                  a(href='/hr_regional') HR Regional 
+                li
+                  a(href='/hr_managers')
+                    | HR Manager
+                li
+                  a(href='/recruiter') Recruiter
+                li
+                  a(href='/employees') Employees
+                li
+                  a(href='/friends') Friends
+                li
+                  a(href='/faq') FAQs
+                
+                li.pull-right(style='margin-left:0% !important;margin-top: 0.3% !important;')
+                   .search-minimal.js-search-minimal
+                      form(method='POST', action='/search')
+                        .search-minimal-input.js-search-minimal-input
+                          input(type='text', placeholder='Search.....',name='searchterm')
+                        i.fa.fa-lg.fa-search.search-minimal-icon.js-search-minimal-icon
+            // End of Menu
+    // End of Header
+    // Header Back
+    .header-back.header-back-bg-overview.header-back-large
+      .header-back-container
         .container
           .row
-            .col-md-2.col-sm-6.col-xs-5
-              // Logo Image
-              a.logo-image(href='/')
-                img.img-responsive(src='https://s3.amazonaws.com/skilledtree-public/logo.png', alt='logo')
-              // End of Logo Image
-              // Languages
-              // End of Languages
-            .col-md-10.col-sm-6.col-xs-7
-              // Menu
-              nav.right.helper
-                ul.menu.sf-menu.js-menu.menu-light(style='color:black !important;')
+            .col-md-12
+              // Rotator
+              .rotator.rotator-light
+                .container
+                  .row
+                    .col-md-12
+                      .rotator-text
+                        | SkilledTree - 
+                        span.js-rotator Multilevel, Supercharge, Automated
+                      br
+                      center
+                        h1 Employee Referral Program
+              // End of Rotator
+        // Next Section Button
+        span.next-section.js-scroll-to.next-section-light(data-target='#content')
+          i.fa-angle-down.fa
+        // End of Next Section Button
+    // End of Header Back
+    #content.panels
+      .container
+        .row
+          .col-md-8.col-md-offset-2
+            .panel
+              header.panel-header Why SkilledTree is best for employee referral?
+              section.panel-content
+                .helper.center
+                p
+                  i.fa.fa-check(style='color: green;')
+                  |  SkilledTree is an 
+                  span.mark.fill.grey Automated Multi Level
+                  |  employee referral program. It allows the employees of any organization to add their referral friends who are looking for job. This will maximize the job reach and candidates will be selected for company’s cultural fit.
+                p
+                  i.fa.fa-check(style='color: green;')
+                  |  SkilledTree encourages the employees of an organization to refer the suitable candidates from their social networks. As a reward, the employer pays the referral employee.
+                p
+                  i.fa.fa-check(style='color: green;')
+                  |   To motivate active participation, set up gamification to reward employees with points for certain activities and hence, gamification is optional
+                p
+                  i.fa.fa-check(style='color: green;')
+                  |  Social Media too will become the driving force behind Employee Referral. Candidates looking for jobs will seek actively expand their 
+                  span.mark.fill.grey online networks
+                  |  in order to gain access to employees in their target organizations
+                p
+                  i.fa.fa-check(style='color: green;')
+                  |   Tracking Reports and Analysis are part of SkilledTree. All the reports can be exported in the desired form
+                p
+                  i.fa.fa-check(style='color: green;')
+                  |   You'll save yourself time and money by using fewer recruitment sources. And by hiring people who already get along, you'll have a head start on building good team.
+            .panel
+              header.panel-header  Overview 
+              section.panel-content
+                .helper.center
+                  img.helper.mb30.panel-image(src='/images/Overview.png', alt='Responsive devices')
+                p.helper.mb30
+                  Login Credentials will be sent to your mail box once you create the account in SkilledTree. As a HR Manager, you can add your employees into the network. These Employees will receive their login credentials either via Email/SMS. Whenever you post a job, it will be reachable to all your employees in the network.
+
+                  Employees can login to SkilledTree with the credentials they received. They can add their friends by manually entering the friend's Name and Email/Phone number or by importing friends contacts with Gmail, Outlook or Yahoo.
+                p.helper.mb30
+                p
+                p
+                p
+            .panel
+              header.panel-header Team
+              section.panel-content
+                h3
+                  span.mark.fill.grey
+                    | What is Team?
+                br
+                p.helper.mb30
+                  | Company can have multiple teams. Each team can have multiple employees. Employees under one team can be moved into another team.
+                .helper.center
+                  img.helper.mb30.panel-image(src='/images/Multiple team.png', alt='Responsive devices')
+                br
+                br
+                h3
+                  span.mark.fill.grey
+                    | Team wise notifications
+                br
+                p.helper.mb30
+                  | These employees will receive the jobs notifications which are posted in their team network. Job Notifications can be notified by SMS, EMail and via GCM.
+                .helper.center
+                  img.helper.mb30.panel-image(src='/images/job reachable.png', alt='Responsive devices')
+                // Table
+                // End of Table
+            .panel
+              header.panel-header  Regions 
+              section.panel-content
+                p.helper.mb30
+                  | If the company has various branches across the world, each team has been grouped into multiple regions. Each region can have multiple cities.
+                .helper.center
+                  // Gif Player
+                  img.helper.mb30.panel-image(src='/images/Region wise reach.png', alt='Responsive devices')
+                  // End of Grid view
+                header.panel-header  Cities 
+                p.helper.mb30
+                  | If the company has various regions, multiple cities will be grouped under each regions.  Each city can have multiple teams.
+                .helper.center
+                  // Gif Player
+                  img.helper.mb30.panel-image(src='/images/City wise reach.png', alt='Responsive devices')
+                  // End of Grid view
+            .panel
+              header.panel-header  Roles
+              section.panel-content
+                h3
+                  span.mark.fill.grey HR Head
+                p.helper.mb30
+                  | Hr Head is the person who is devised to administer the employee referral program on regional-wise. A company can have only one HR Head.
+                .helper.center
+                  img.helper.mb30.panel-image(src='/images/HR Head.png', alt='Responsive devices')
+                br
+                br
+                h3
+                  span.mark.fill.grey Regional manager
+                p.helper.mb30
+                  | HR Regional Manager is the person who is devised to manage the HR Managers under each regions.
+                .helper.center
+                  img.helper.mb30.panel-image(src='/images/Regional manager.png', alt='Responsive devices')
+                br
+                br
+                // Browser Support
+                h3
+                  span.mark.fill.grey HR Manager
+                p.helper.mb30
+                  | HR Manager will have all the authorities of recruitment process. He can post a job, checklist the referral resumes and select the suitable candidate ‘fit’ for the company within his concerned city where he belongs to.
+                .helper.center
+                  img.helper.mb30.panel-image(src='/images/HR Manager role.png', alt='Responsive devices')
+                br
+                br
+                // Browser Support
+                h3
+                  span.mark.fill.grey Recruiter
+                p.helper.mb30
+                  | Recruiter is devised to manage the interview process for assigned referral candidates. He can post a referral job in his wall and that will be reachable to his entire team.
+                .helper.center
+                  img.helper.mb30.panel-image(src='/images/Overview_Recruiter.png', alt='Responsive devices')
+                br
+                br
+                // Browser Support
+                // Browser Support
+                // End of Browser Support
+    // Footer
+    footer.js-footer-is-fixed
+      // Footer Extended
+      // End of Footer Extended
+      // Footer Default
+      .footer
+        .container
+          .row
+            .col-md-3.col-sm-3.col-xs-12
+              .footer-logo-wrapper
+                // Logo Image
+                a.logo-image(href='index.html')
+                  img(src='https://s3.amazonaws.com/skilledtree-public/skilledtree-logo.png', alt='logo')
+                // End of Logo Image
+                // Slogan
+                p.slogan
+                  | Hire.
+                  br
+                  | Quality.
+                  br
+                  | Candidates.
+                // End of Slogan
+            .col-md-9.col-sm-9.col-xs-12
+              .footer-wrapper
+                // Scroll top
+                span.scroll-top.js-scroll-top
+                  i.fa.fa-angle-up
+                // End of Scroll top
+                // Version
+                // End of Version
+                // Footer Menu
+                ul.footer-menu.helper.right
                   li
-                    a(href='/')
-                      i.fa.fa-home.fa-2x
+                    a(href='/hr_head')  HR Head
                   li
-                    a(href='/hr_head') HR Head 
+                    a(href='/hr_regional')  HR Regional
                   li
-                    a(href='/hr_regional') HR Regional 
+                    a(href='/hr_managers')  HR Manager 
                   li
-                    a(href='/hr_managers')
-                      | HR Manager
+                    a(href='/recruiter')  Recruiter 
                   li
-                    a(href='/recruiter') Recruiter
-                  li
-                    a(href='/employees') Employees
+                    a(href='/employees')  Employees
                   li
                     a(href='/friends') Friends
                   li
                     a(href='/faq') FAQs
-                  li
-                    .pull-right(style='margin-left:0% !important;margin-top: 0.3% !important;')
-                      .search-minimal.js-search-minimal
-                        form(method='POST', action='/search')
-                          .search-minimal-input.js-search-minimal-input
-                            input(type='text', placeholder='Search.....', name='searchterm')
-                            i.fa.fa-lg.fa-search.search-minimal-icon.js-search-minimal-icon
-              // End of Menu
-      // End of Header
-      // Header Back
-      .header-back.header-back-bg-overview.header-back-large
-        .header-back-container
-          .container
-            .row
-              .col-md-12
-                // Rotator
-                .rotator.rotator-light
-                  .container
-                    .row
-                      .col-md-12
-                        .rotator-text
-                          | SkilledTree - 
-                          span.js-rotator Multilevel, Supercharge, Automated
-                        br
-                        center
-                          h1 Employee Referral Program
-                // End of Rotator
-                //
-                  <div class="header-back-buttons helper center">
-                  <a href="#" class="button stroke rounded large white">Download</a>
-                  <a href="#" class="button stroke rounded large white">GitHub</a>
-                  </div>
-          // Next Section Button
-          span.next-section.js-scroll-to.next-section-light(data-target='#content')
-            i.fa-angle-down.fa
-          // End of Next Section Button
-      // End of Header Back
-      #content.panels
-        .container
-          .row
-            .col-md-8.col-md-offset-2
-              .panel
-                header.panel-header Why SkilledTree is best for employee referral?
-                section.panel-content
-                  .helper.center
-                  p
-                    i.fa.fa-check(style='color: green;')
-                    |  SkilledTree is an 
-                    span.mark.fill.grey Automated Multi Level
-                    |  employee referral program. It allows the employees of any organization to add their referral friends who are looking for job. This will maximize the job reach and candidates will be selected for company’s cultural fit.
-                  p
-                    i.fa.fa-check(style='color: green;')
-                    |  SkilledTree encourages the employees of an organization to refer the suitable candidates from their social networks. As a reward, the employer pays the referral employee.
-                  p
-                    i.fa.fa-check(style='color: green;')
-                    |   To motivate active participation, set up gamification to reward employees with points for certain activities and hence, gamification is optional
-                  p
-                    i.fa.fa-check(style='color: green;')
-                    |  Social Media too will become the driving force behind Employee Referral. Candidates looking for jobs will seek actively expand their 
-                    span.mark.fill.grey online networks
-                    |  in order to gain access to employees in their target organizations
-                  p
-                    i.fa.fa-check(style='color: green;')
-                    |   Tracking Reports and Analysis are part of SkilledTree. All the reports can be exported in the desired form
-                  p
-                    i.fa.fa-check(style='color: green;')
-                    |   You'll save yourself time and money by using fewer recruitment sources. And by hiring people who already get along, you'll have a head start on building good team.
-              .panel
-                header.panel-header  Overview 
-                section.panel-content
-                  .helper.center
-                    img.helper.mb30.panel-image(src='/images/Overview.png', alt='Responsive devices')
-                  .list-view.helper.m0
-                    .list-item
-                      .list-item-header
-                        h3.list-item-title
-                          | Companies
-                      .list-item-content
-                        | If you have the company size of more than 200+ employees then SkilledTree is the best option for your employee referral program. Your company account will be created in SkilledTree. Maximum job reach claims the benefits to be an improved candidate quality fit. Candidate 'fit' to the company's culture and teams.
-                    .list-item
-                      .list-item-header
-                        h3.list-item-title
-                          | Employees
-                      .list-item-content
-                        | Employees in your organization are the soul of the referral program. People who already work for you will tend to refer people with work ethics similar to their own. If you have high-quality employees, you will likely receive referrals of the same,heading towards an efficient recruitment process.
-                    .list-item
-                      .list-item-header
-                        h3.list-item-title
-                          | Referrals
-                      .list-item-content
-                        | Employees who are hired through referrals tend to stay with the company longer than other candidates. So get your dignified employees by encouraging your current employees to add more referrals to the team.
-                  p.helper.mb30
-                  p
-                  p
-                  p
-              .panel
-                header.panel-header Team
-                section.panel-content
-                  h3
-                    span.mark.fill.grey
-                      | What is Team?
-                  br
-                  p.helper.mb30
-                    | Company can have multiple teams. Each team can have multiple employees. Employees under one team can be moved into another team.
-                  .helper.center
-                    img.helper.mb30.panel-image(src='/images/Multiple team.png', alt='Responsive devices')
-                  br
-                  br
-                  h3
-                    span.mark.fill.grey
-                      | Team wise notifications
-                  br
-                  p.helper.mb30
-                    | These employees will receive the jobs notifications which are posted in their team network. Job Notifications can be notified by SMS, EMail and via GCM.
-                  .helper.center
-                    img.helper.mb30.panel-image(src='/images/job reachable.png', alt='Responsive devices')
-                  // Table
-                  // End of Table
-              .panel
-                header.panel-header  Regions 
-                section.panel-content
-                  p.helper.mb30
-                    | If the company has various branches across the world, each team has been grouped into multiple regions. Each region can have multiple cities.
-                  .helper.center
-                    // Gif Player
-                    img.helper.mb30.panel-image(src='/images/Region wise reach.png', alt='Responsive devices')
-                    // End of Grid view
-                  header.panel-header  Cities 
-                  p.helper.mb30
-                    | If the company has various regions, multiple cities will be grouped under each regions.  Each city can have multiple teams.
-                  .helper.center
-                    // Gif Player
-                    img.helper.mb30.panel-image(src='/images/City wise reach.png', alt='Responsive devices')
-                    // End of Grid view
-              .panel
-                header.panel-header  Roles
-                section.panel-content
-                  h3
-                    span.mark.fill.grey HR Head
-                  p.helper.mb30
-                    | Hr Head is the person who is devised to administer the employee referral program on regional-wise. A company can have only one HR Head.
-                  .helper.center
-                    img.helper.mb30.panel-image(src='/images/HR Head.png', alt='Responsive devices')
-                  br
-                  br
-                  h3
-                    span.mark.fill.grey Regional manager
-                  p.helper.mb30
-                    | HR Regional Manager is the person who is devised to manage the HR Managers under each regions.
-                  .helper.center
-                    img.helper.mb30.panel-image(src='/images/Regional manager.png', alt='Responsive devices')
-                  br
-                  br
-                  // Browser Support
-                  h3
-                    span.mark.fill.grey HR Manager
-                  p.helper.mb30
-                    | HR Manager will have all the authorities of recruitment process. He can post a job, checklist the referral resumes and select the suitable candidate ‘fit’ for the company within his concerned city where he belongs to.
-                  .helper.center
-                    img.helper.mb30.panel-image(src='/images/HR Manager role.png', alt='Responsive devices')
-                  br
-                  br
-                  // Browser Support
-                  h3
-                    span.mark.fill.grey Recruiter
-                  p.helper.mb30
-                    | Recruiter is devised to manage the interview process for assigned referral candidates. He can post a referral job in his wall and that will be reachable to his entire team.
-                  .helper.center
-                    img.helper.mb30.panel-image(src='/images/Overview_Recruiter.png', alt='Responsive devices')
-                  br
-                  br
-                  // Browser Support
-                  // Browser Support
-                  // End of Browser Support
-      // Footer
-      footer.js-footer-is-fixed
-        // Footer Extended
-        // End of Footer Extended
-        // Footer Default
-        .footer
-          .container
-            .row
-              .col-md-3.col-sm-3.col-xs-12
-                .footer-logo-wrapper
-                  // Logo Image
-                  a.logo-image(href='index.html')
-                    img(src='https://s3.amazonaws.com/skilledtree-public/skilledtree-logo.png', alt='logo')
-                  // End of Logo Image
-                  // Slogan
-                  p.slogan
-                    | Hire.
-                    br
-                    | Quality.
-                    br
-                    | Candidates.
-                  // End of Slogan
-              .col-md-9.col-sm-9.col-xs-12
-                .footer-wrapper
-                  // Scroll top
-                  span.scroll-top.js-scroll-top
-                    i.fa.fa-angle-up
-                  // End of Scroll top
-                  // Version
-                  // End of Version
-                  // Footer Menu
-                  ul.footer-menu.helper.right
-                    li
-                      a(href='/hr_head')  HR Head
-                    li
-                      a(href='/hr_regional')  HR Regional
-                    li
-                      a(href='/hr_managers')  HR Manager 
-                    li
-                      a(href='/recruiter')  Recruiter 
-                    li
-                      a(href='/employees')  Employees
-                    li
-                      a(href='/friends') Friends
-                    li
-                      a(href='/faq') FAQs
-                  // End of Footer Menu
-                  // Copyright
-                  // End of Copyright
-                  p.copyright.helper.right
-                    | All Rights Reserved.
-                    a(href='http://www.masymbol.com/', target='_blank') Masymbol Technologies
-                    |  Pvt Ltd © 2016
-        // End of Footer Default
-      // End of Footer
-    script(src='/javascripts/all.js')
-    script(src='/javascripts/custom.js')
+                // End of Footer Menu
+                // Copyright
+                // End of Copyright
+                p.copyright.helper.right
+                  | All Rights Reserved.
+                  a(href='http://www.masymbol.com/', target='_blank') Masymbol Technologies
+                  |  Pvt Ltd © 2016
+      // End of Footer Default
+    // End of Footer
+
+  script(src='/javascripts/all.js')
+ 

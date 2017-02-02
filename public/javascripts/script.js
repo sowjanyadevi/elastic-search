@@ -8,8 +8,7 @@ var searchIcons = $('.js-search-minimal-icon');
 			var input = scope.find('.js-search-minimal-input');
 
 			btn.click(function () {
-	alert()
-				
+	
 				if(!input.is(':visible')){
 					input.fadeIn('fast');
 					input.addClass('col-md-3');

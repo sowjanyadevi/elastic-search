@@ -1,0 +1,139 @@
+extends layout
+
+block content
+    .page.js-page
+      // One Page Sidebar
+      .one-page-sidebar
+        // One Page Sidebar Header
+        .one-page-sidebar-header
+          // One Page Logo
+          .one-page-logo
+            // Logo Image
+            a.logo-image(href='/employees')
+              img(src='/images/logo2.png')
+            br
+            a.logo-image(href='/employees')
+              img(src='/images/employee.png')
+            // End of Logo Image
+          // End of One Page Logo
+          // One Page Meta
+          // End of One Page Meta
+        // End of One Page Sidebar Header
+        // One Page Nav
+        .one-page-nav-wrapper.js-custom-scrollbar
+          ul.one-page-nav.js-one-page-nav(data-prepend-to='.js-prepend-mobile-menu')
+            li.is-active
+              a(href='#what')
+                span.one-page-nav-icon
+                  i.fa.fa-question-circle-o
+                | What is SkilledTree
+            li
+              a(href='#what_to_do')
+                span.one-page-nav-icon
+                  i.fa.fa-question-circle
+                | What To Do?
+            li
+              a(href='#mobile')
+                span.one-page-nav-icon
+                  i.fa.fa-tablet
+                | Mobile App
+            li
+              a(href='#autojob')
+                span.one-page-nav-icon
+                  i.fa.fa-black-tie
+                | Auto Job Notification
+            li
+              a(href='#employee')
+                span.one-page-nav-icon
+                  i.fa.fa-user
+                | Role of an Employee
+        // End of One Page Nav
+        footer.one-page-sidebar-footer
+          | All Rights Reserved.
+          a(href='http://www.masymbol.com/', target='_blank') Masymbol Technologies
+          |  Pvt Ltd © 2016
+        // End of One Page Sidebar Footer
+      // End of One Page Sidebar
+      // One Page Content
+      .one-page-content
+        // Header
+        header.header.large.header-one-page.js-header-fixed
+          .container-fluid.container-spaced
+            .row
+              .col-md-3.col-sm-6.col-xs-5
+                .visible-sm-block.visible-xs-block
+                  // Logo Image
+                  a.logo-image(href='/')
+                    img.img-responsive(src='https://s3.amazonaws.com/skilledtree-public/logo.png', alt='logo')
+                  // End of Logo Image
+              .col-md-12.col-sm-6.col-xs-7
+                // Menu
+                nav.right.helper
+                  ul.menu.sf-menu.js-menu
+                    li
+                      a(href='/employees')
+                        i.fa.fa-home.fa-lg
+                    li
+                      a.active(href='/employees/introduction') Introduction 
+                    li
+                      a(href='/employees/points_and_gifts') Points & Gifts
+                    li
+                      a(href='/employees/friends') Friends 
+                    li
+                      a(href='/employees/Jobs') Jobs
+                    li
+                      a(href='/employees/resumes') Resumes 
+                    li
+                      a(href='/employees/header') Header
+                    li
+                      a(href='/employees/dashboard')
+                        | Dashboard
+                // End of Menu
+        // End of Header
+        #content
+          .container-fluid.container-spaced
+            .col-md-12
+              #what.category-info.helper.pt0
+                h1 What is SkilledTree
+                p.category-content
+                  | SkilledTree is the portal for multi level employee referrals. All relevant jobs will be notified to employees and employees' friends and their friends. Here, job will reach three levels of circles (employees, employee friends and friends of friends).
+            br
+            .col-md-12
+              #what_to_do.category-info.helper.pt0
+                h1 What To Do?
+                p.category-content
+                  | As an Employee, you can login to SkilledTree with the login credentials which was sent by your HR already to your Email Inbox / SMS. You will be moved to any team which was created and assigned by your employer. As an employee, you need to add your relevant friends to send job notification to them. Even your friend can add their friends. Whenever HR posts a job, all your friends will receive job notifications. Any of your friends applied or selected, you will receive referral bonus as per your company policy.
+            br
+            .col-md-12
+              #mobile.category-info.helper.pt0
+                h1 Mobile App
+                p.category-content
+                  | SkilledTree recommends all the employees to use the mobile app instead of website as mobile app is simple to access, you will receive job notifications easily, you can easily recommend your friends and other candidates and many more functionalities are available which are easy to use.
+            br
+            br
+            .col-md-12
+              #autojob.category-info.helper.pt0
+                h1 Auto Job Notification
+                p.category-content
+                  | This is entirely automated. The main role of  employee needs to do is, add his relevant friends to receive job notification.  So, you don’t required to apply your friends resume instead your friend can apply.
+            br
+            br
+            .col-md-12
+              #employee.category-info.helper.pt0
+                h1 Role of an Employee
+                p.category-content
+                  | Jobs which are posted by the employers in your team will be visible in your jobs wall. You can add your friends who are job seekers or any working professionals to SkilledTree by uploading their personal information such as Name, Email or Phone number in an Excel format or by adding them manually.Else, you can share those jobs with any of your Social Media accounts such as Facebook, Twitter, LinkedIn, Pinterest and Google plus by integrating them.
+            br
+            br
+      // End of One Page Content
+    script(src='https://s3.amazonaws.com/skilledtree-public/all.js')
+    // Google Analytics: change UA-XXXXX-X to be your site's ID.
+    //
+      <script>
+      (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+      function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+      e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+      e.src='//www.google-analytics.com/analytics.js';
+      r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+      ga('create','UA-XXXXX-X','auto');ga('send','pageview');
+      </script>

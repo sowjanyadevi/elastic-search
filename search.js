@@ -20,7 +20,7 @@ router.post('/', function(req, res, next) {
     else {
       //console.log("--- Response ---");
       console.log(response.hits.hits);
-      res.render('search', { title: 'Express' , response:response});
+      res.render('search', { title: 'search' , response:response});
       //console.log("--- Hits ---");
       //response.hits.hits.forEach(function(hit){
       //console.log(hit);
